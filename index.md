@@ -10,4 +10,4 @@
 
 ### Email
 
-[shaoyu1122@foxmail.com](shaoyu1122@foxmail.com)
+shaoyu1122@foxmail.com
