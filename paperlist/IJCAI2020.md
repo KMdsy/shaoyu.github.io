@@ -1,6 +1,6 @@
-# time series
+# Time Series
 
-+ **计划阅读 **A new attention mechanism to classify multivariate time series
++ **计划阅读** A new attention mechanism to classify multivariate time series
 
 Yifan Hao, Huiping Cao
 
@@ -16,7 +16,7 @@ Lu Bai, Lixin Cui, Yue Wang, Yuhang Jiao, Edwin R. Hancock
 
 Michael Poli, Jinkyoo Park, Ilija Ilievski
 
-# recurrent
+# Recurrent
 
 + A Structured Latent Variable Recurrent Network with Stochastic Attention for Generating Weibo Comments
 
@@ -31,7 +31,7 @@ Dan Guo, Yang Wang, Peipei Song, Meng Wang
 Yaqiong Li, Xuhui Fan, Ling Chen, Bin Li, Zheng Yu, Scott A. Sisson
 
 
-# sequence
+# Sequence
 
 + Seq-U-Net: A One-Dimensional Causal U-Net for Efficient Sequence Modelling
 
@@ -50,7 +50,7 @@ Kangzhi Zhao, Yong Zhang, Hongzhi Yin, Jin Wang, Kai Zheng, Xiaofang Zhou, Chunx
 Yucheng Zhao, Chong Luo, Zheng-Jun Zha, Wenjun Zeng
 
 
-# anomaly detection
+# Anomaly Detection
 
 + Towards a Hierarchical Bayesian Model of Multi-View Anomaly Detection
 
@@ -69,7 +69,7 @@ Kaize Ding, Jundong Li, Nitin Agarwal, Huan Liu
 Adam Goodge, Bryan Hooi, See Kiong Ng, Wee Siong Ng
 
 
-# interpretable
+# Interpretable
 + Explainable Recommendation via Interpretable Feature Mapping and Evaluation of Explainability
 
 Deng Pan, Xiangrui Li, Xin Li, Dongxiao Zhu
@@ -102,7 +102,7 @@ Kumar Ayush, Burak Uzkent, Marshall Burke, David Lobell, Stefano Ermon
 
 Shuoyao Wang, Diwei Zhu
 
-# autoencoder
+# Autoencoder
 + Detecting Adversarial Attacks via Subset Scanning of Autoencoder Activations and Reconstruction Error
 
 Celia Cintas, Skyler Speakman, Victor Akinwande, William Ogallo, Komminist Weldemariam, Srihari Sridharan, Edward McFowland
@@ -119,7 +119,7 @@ Luis A. Perez Rey, Vlado Menkovski, Jim Portegies
 
 Junwen Bai, Shufeng Kong, Carla Gomes
 
-#LSTM
+# LSTM
 + PewLSTM: Periodic LSTM with Weather-Aware Gating Mechanism for Parking Behavior Prediction
 
 Feng Zhang, Ningxuan Feng, Yani Liu, Cheng Yang, Jidong Zhai, Shuhao Zhang, Bingsheng He, Jiazao Lin, Xiaoyong Du
