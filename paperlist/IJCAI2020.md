@@ -1,4 +1,6 @@
-# Time Series
+# IJCAI 2020
+
+## Time Series
 
 + **计划阅读** A new attention mechanism to classify multivariate time series
 
@@ -16,7 +18,7 @@
 
   Michael Poli, Jinkyoo Park, Ilija Ilievski
 
-# Recurrent
+## Recurrent
 
 + A Structured Latent Variable Recurrent Network with Stochastic Attention for Generating Weibo Comments
 
@@ -31,7 +33,7 @@
   Yaqiong Li, Xuhui Fan, Ling Chen, Bin Li, Zheng Yu, Scott A. Sisson
 
 
-# Sequence
+## Sequence
 
 + Seq-U-Net: A One-Dimensional Causal U-Net for Efficient Sequence Modelling
 
@@ -50,7 +52,7 @@
   Yucheng Zhao, Chong Luo, Zheng-Jun Zha, Wenjun Zeng
 
 
-# Anomaly Detection
+## Anomaly Detection
 
 + Towards a Hierarchical Bayesian Model of Multi-View Anomaly Detection
 
@@ -69,7 +71,7 @@
   Adam Goodge, Bryan Hooi, See Kiong Ng, Wee Siong Ng
 
 
-# Interpretable
+## Interpretable
 + Explainable Recommendation via Interpretable Feature Mapping and Evaluation of Explainability
 
   Deng Pan, Xiangrui Li, Xin Li, Dongxiao Zhu
@@ -102,7 +104,7 @@
 
   Shuoyao Wang, Diwei Zhu
 
-# Autoencoder
+## Autoencoder
 + Detecting Adversarial Attacks via Subset Scanning of Autoencoder Activations and Reconstruction Error
 
   Celia Cintas, Skyler Speakman, Victor Akinwande, William Ogallo, Komminist Weldemariam, Srihari Sridharan, Edward McFowland
@@ -119,7 +121,7 @@
 
   Junwen Bai, Shufeng Kong, Carla Gomes
 
-# LSTM
+## LSTM
 
 + PewLSTM: Periodic LSTM with Weather-Aware Gating Mechanism for Parking Behavior Prediction
 
