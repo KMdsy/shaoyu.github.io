@@ -20,7 +20,7 @@ Zengjian Chen (Huazhong University of Science and Technology); Jiayi Liu (Univer
 
 Keyu Yang (Zhejiang University); Yunjun Gao (” Zhejiang University, China”)\*; Rui Ma (Zhejiang University); Lu Chen (Aalborg University, Denmark); Sai Wu (Zhejiang Univ); Gang Chen (Zhejiang University)
 
-+ **已读 **Deep Anomaly Detection with Deviation Networks
++ **已读** Deep Anomaly Detection with Deviation Networks
 
 Authors: Guansong Pang (The University of Adelaide);Chunhua Shen (The University of Adelaide);Anton van den Hengel (The University of Adelaide);
 
@@ -36,7 +36,7 @@ Authors: Minji Yoon (Carnegie Mellon University);Bryan Hooi (Carnegie Mellon Uni
 
 Authors: Min-Hwan Oh (Columbia University);Garud Iyengar (Columbia University);
 
-+ **已读 **Robust Anomaly Detection for Multivariate Time Series through Stochastic Recurrent Neural Network
++ **已读** Robust Anomaly Detection for Multivariate Time Series through Stochastic Recurrent Neural Network
 
 Authors: Ya Su, Youjian Zhao, Chenhao Niu, Rong Liu, Wei Sun and Dan Pei
 
