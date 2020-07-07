@@ -6,7 +6,7 @@
 
 ### Page list
 
-+ [论文整理](shaoyu.github.io/paperlist.html)
++ [论文整理](./paperlist.html)
 
 ### Email
 
