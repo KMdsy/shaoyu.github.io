@@ -1,4 +1,6 @@
-# Data Augmentation (Specifically for rhythmic time series, e.g. ECG, EEG, etc..)
+# Data Augmentation 
+
+##(Specifically for rhythmic time series, e.g. ECG, EEG, etc..)
 
 一般来讲，针对ECG/EEG数据的分类、异常检测等任务，都存在严重的数据不平衡问题。这些数据增强方法一般用于丰富样本较少的类别。
 大量的工作集中于使用GAN/VAE等生成模型建立数据的分布，然后从分布中生成采样。以下的方法是一些在显空间数据上进行数据增强的简单方法。
