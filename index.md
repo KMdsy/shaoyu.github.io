@@ -7,6 +7,7 @@
 ### Paper List
 
 + [论文整理](./paperlist.md)
++ [一些乱七八糟的调研](./surveys.md)
 
 ### Email
 
