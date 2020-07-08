@@ -71,6 +71,7 @@
 
 	John Paparrizos (University of Chicago) and Michael Franklin (University of Chicago)
 
+------
 
 # ICDE2018
 + Polygraph: A Plug-n-Play Framework to Quantify Anomalies
@@ -104,6 +105,8 @@
 	Latifur Khan (University of Texas at Dallas)
 	Jie Liu (University of Texas at Dallas)
 	Charu Aggarwal (IBM Research)
+
+-----------------------
 	
 # ICDE2016
 	
@@ -114,6 +117,9 @@
 + Time-series classification with COTE: The collective of transformation-based ensembles. 1548-1549
 
 + Fast motif discovery in short sequences. 1158-1169
+
+
+-------------------
 
 # ICDM2015
 + Time Series Segmentation to Discover Behavior Switching in Complex Physical Systems
