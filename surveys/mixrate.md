@@ -3,6 +3,7 @@
 ----
 
 + Autoregressive Convolutional Neural Networks for Asynchronous Time Series: **ICML 2019**
+
   异：
   1. 处理的是多维时间序列数据
   2. 针对非同步数据，并未和我们一样，训练一个能够用于多种采样率的模型，而是将[多维时间序列，序列指示剂，采样间隔]合并成为多维时间序列，然后输入到网络中
