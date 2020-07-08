@@ -1,6 +1,7 @@
 # Time series similarity learning
 
 -----
+
 + NIPS19 - Learning Representations for Time Series Clustering
 
 流程
@@ -14,6 +15,7 @@
 1. K-means的隐空间建模能力远弱与GMM
 
 ----------------
+
 + KDD19 - NeuralWarp: Time-Series Similarity with Warping Networks
 
 流程
@@ -27,6 +29,7 @@
 1. 有监督学习
 
 ---------------
+
 + ICLR19 - SOM-VAE: INTERPRETABLE DISCRETE REPRESENTATION LEARNING ON TIME SERIES [code]
 
 流程
@@ -41,6 +44,7 @@
 1. 没想好
 
 --------------------
+
 + ICML19 workshop - Warping Resilient Time Series Embeddings
 
 流程
@@ -55,6 +59,7 @@
 1. 仅对时间序列的翘曲不敏感，但对更复杂的时间序列的表征能力可能会很弱
 
 ----------------
+
 + KDD19 workshop - A Formally Robust Time Series Distance Metric [code]
 
 流程
@@ -67,6 +72,7 @@
 其实我们的方法一定程度上也在解决这种对污染序列的鲁棒性，而我们使用的是auto-encoder来过滤污染序列对原始序列在隐空间上的影响的。
 
 -----------
+
 + IJCAI19 - Similarity Preserving Representation Learning for Time Series Clustering [code]
 
 流程
@@ -79,6 +85,7 @@
 1. 当时间序列在显空间的相似度能够揭示数据的簇时，该方法有效，但当显空间的距离度量无法区分数据内在的性质的时候，该方法将会失效
 
 -----------
+
 + NIPS18 - Autowarp: Learning a Warping Distance from Unlabeled Time Series Using Sequence Autoencoders
 
 流程
@@ -92,7 +99,9 @@
 我认为的缺点
 1. 过于依赖隐空间所提供的分簇信息，当隐空间表达不足以支持分簇的时候，该方法近乎失效。
 2. 两段式的算法，寻找距离度量的优化过程与auto-encoder的优化过程分离，可能会导致性能不佳
+
 -------
+
 ### 其他
 
 + KDD 17 workshop - DECADE: A deep metric learning model for multivariate time series
