@@ -1,5 +1,7 @@
 # IJCAI 2020
 
+[Link](http://static.ijcai.org/2020-accepted_papers.html)
+
 ## Time Series
 
 + **计划阅读** A new attention mechanism to classify multivariate time series
