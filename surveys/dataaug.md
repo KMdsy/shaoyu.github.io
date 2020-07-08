@@ -60,7 +60,7 @@
   文章本身所提出的增强方法仅适用于ECG数据（需要提取数据的QPV段等），但在related work中提及了一些通用的增强方法
   
 ----------
-### 一些‘没什么用’的方法 
+### 一些 “没什么用” 的方法 
   
 + ECG arrhythmia classification using a 2-D convolutional neural network
   
