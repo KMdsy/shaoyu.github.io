@@ -97,20 +97,21 @@
 
 + KDD 17 workshop - DECADE: A deep metric learning model for multivariate time series
 
-主要解决多维时间序列计算DTW距离的问题，主要方法：先将高维数据映射到隐空间，然后在隐空间计算每一维数据对应所有其他维度的alignment path，然后定义了一种新的对齐方法expected alignment，其本质是对mdtw中所有可能的alignment path上的距离做平均。
-该方法是有监督学习，最小化同类见的距离，最大化不同类之间的距离
+    主要解决多维时间序列计算DTW距离的问题，主要方法：先将高维数据映射到隐空间，然后在隐空间计算每一维数据对应所有其他维度的alignment path，然后定义了一种新的对齐方法expected alignment，其本质是对mdtw中所有可能的alignment path上的距离做平均。
+    
+    该方法是有监督学习，最小化同类见的距离，最大化不同类之间的距离
 
 + NIPS 16 - Graphical Time Warping for Joint Alignment of Multiple Curves
 
-DTW在图像等数据上的推广，本文提出DTW的dynamic programming过程可以视为graph上的network flow problem，并使用max flow algorithm进行求解。利用上述问题转换方法，解决了图像（可视为多维时间序列）上像素之间的距离度量问题。
+    DTW在图像等数据上的推广，本文提出DTW的dynamic programming过程可以视为graph上的network flow problem，并使用max flow algorithm进行求解。利用上述问题转换方法，解决了图像（可视为多维时间序列）上像素之间的距离度量问题。
 
 + KDD17 - Tripoles: A New Class of Relationships in Time Series Data
 
-定义了一种在三个时间序列之间的关系，该关系有利于发现时间序列中的新特性（如新的全球气象类型等）
+    定义了一种在三个时间序列之间的关系，该关系有利于发现时间序列中的新特性（如新的全球气象类型等）
 
 + ICML17 - Soft-DTW: a Differentiable Loss Function for Time-Series
 
-提出smoothed formulation of DTW，是一种可微分的DTW求解方式，这使得DTW能够嵌入到深度学习的框架中
+    提出smoothed formulation of DTW，是一种可微分的DTW求解方式，这使得DTW能够嵌入到深度学习的框架中
 
 
 
