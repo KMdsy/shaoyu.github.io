@@ -1,4 +1,4 @@
-# IJCAI 2020
+# IJCAI 2020 (2021.01)
 
 [Link](http://static.ijcai.org/2020-accepted_papers.html)
 
