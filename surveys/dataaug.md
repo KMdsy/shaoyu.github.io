@@ -8,9 +8,9 @@
 
 +  BeatGAN: Anomalous Rhythm Detection using Adversarially Generated Time Series
 
-  Zhou, B., Liu, S., Hooi, B., Cheng, X., & Ye, J. *(2019, August)*. BeatGAN: Anomalous Rhythm Detection using Adversarially Generated Time Series. **In IJCAI** (pp. 4433-4439).
-  
-  Time warping，模拟ECG数据中的瞬时增速与减速，具体操作的时候，随机删除N个点，然后再随机平均插值N个点。
+	Zhou, B., Liu, S., Hooi, B., Cheng, X., & Ye, J. *(2019, August)*. BeatGAN: Anomalous Rhythm Detection using Adversarially Generated Time Series. **In IJCAI** (pp. 4433-4439).
+
+	Time warping，模拟ECG数据中的瞬时增速与减速，具体操作的时候，随机删除N个点，然后再随机平均插值N个点。
   
 + Convolutional recurrent neural networks for electrocardiogram classification
 
