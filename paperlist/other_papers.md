@@ -1,11 +1,11 @@
 # 一些经典的论文
 
 ## Anomaly detection
- ----
+
   > The work that is the most related to ours is **AnoGAN (Schlegl et al., 2017)**.
-  
+  >
   > ...
-  
+  >
   > **Bergmann et al. (2019)** compare standard AE reconstructions techniques
   > to AnoGAN, and observes that AnoGAN’s performances on anomaly localizations tasks are
   > poorer than AE’s due to the mode collapse tendency of GAN architectures. Interestingly, updates on
