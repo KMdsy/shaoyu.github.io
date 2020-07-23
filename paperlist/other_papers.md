@@ -16,8 +16,7 @@
   
   **AnoGAN (Schlegl et al., 2017)** Thomas Schlegl, Philipp Seeböck, Sebastian M Waldstein, Ursula Schmidt-Erfurth, and Georg
   Langs. Unsupervised anomaly detection with generative adversarial networks to guide marker
-  discovery. In International Conference on Information Processing in Medical Imaging, pp. 146–
-  157. Springer, 2017.
+  discovery. In International Conference on Information Processing in Medical Imaging, pp. 146–157. Springer, 2017.
   
   **Bergmann et al. (2019)** Paul Bergmann, Michael Fauser, David Sattlegger, and Carsten Steger. Mvtec ad—a comprehensive real-world 
   dataset for unsupervised anomaly detection. CVPR, 2019.
