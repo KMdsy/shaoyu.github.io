@@ -9,6 +9,13 @@
 + [论文整理](./paperlist.md)
 + [一些乱七八糟的调研](./surveys.md)
 
+
+### 一些有用的转载
+
++ [关于可解释机器学习](https://zhpmatrix.github.io/2019/07/19/interpretable-model/)
+
+
+
 ### Email
 
 shaoyu1122@foxmail.com
