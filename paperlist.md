@@ -14,6 +14,10 @@
 
 + [NDSS 2020](./paperlist/NDSS2020.md)
 
++ [SIGIR 2020 (2020.07.25)](./paperlist/SIGIR2020.md)
+
++ [SIGKDD 2020 (2020.08.23)](./paperlist/KDD2020.md)
+
 + [一些经典的论文](./paperlist/other_papers.md)
 
 + [Other Conferences](./paperlist/otherconf.md)
