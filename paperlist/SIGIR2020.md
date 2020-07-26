@@ -18,6 +18,8 @@ Accepted paper list: [Link](https://sigir.org/sigir2020/accepted-papers/)
 
 ## Anomaly Detection
 
+N/A
+
 ## Sequence
 
 + Dual Sequential Network for Temporal Sets Prediction
