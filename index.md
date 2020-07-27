@@ -15,6 +15,11 @@
 + [关于可解释机器学习](https://zhpmatrix.github.io/2019/07/19/interpretable-model/)
 
 
+### 一些不定期更新的笔记
+
++ [Here](./notes.md)
+
+
 
 ### Email
 
