@@ -27,6 +27,8 @@
   
   Github: [Link](https://github.com/ParthaEth/Regularized_autoencoders-RAE-)
   
+  Some code and its explaination: [Link](http://ameroyer.github.io/projects/2019/08/20/VQVAE.html)
+  
   **解决的问题**: 建模数据的隐空间分布模型，提出RAE（Regularized Autoencoder）。
   
   **创新与独特**: RAE无需假设数据的隐空间分布符合任何先验分布。
