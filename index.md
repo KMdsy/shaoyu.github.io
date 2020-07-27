@@ -14,6 +14,8 @@
 
 + [关于可解释机器学习](https://zhpmatrix.github.io/2019/07/19/interpretable-model/)
 
++ [关于VQ-VAE](https://www.spaces.ac.cn/archives/6760)
+
 
 ### 一些不定期更新的笔记
 
