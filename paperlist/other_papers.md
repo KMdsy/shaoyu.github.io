@@ -80,7 +80,7 @@
   > by a neural network [black] time-point-wise into the latent space. The latent data manifold is approximated
   > with a self-organizing map (SOM) [red]. In order to achieve a discrete representation, every latent data point
   > ($z_e$) is mapped to its closest node in the SOM ($z_q$). A Markov transition model [blue] is learned to predict
-  > the next discrete representation (z_q ^{t+1} ) given the current one (z_q ^{t}). The discrete representations can then be
+  > the next discrete representation ($z_q ^{t+1}$) given the current one ($z_q ^{t}$). The discrete representations can then be
   > decoded by another neural network back into the original data space.*
   
 
