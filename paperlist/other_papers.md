@@ -89,7 +89,29 @@
 
   Github: [Link](https://github.com/nakosung/VQ-VAE), [A useful blog](http://ameroyer.github.io/projects/2019/08/20/VQVAE.html)
   
-  提出VQ-VAE，还没读。
+  **解决的问题**: 学习数据的隐空间离散化表示，该离散化表示可以用于压缩编码、生成更清晰的图像等。
+  
+  **创新与独特**：第一个学习数据离散表示的工作。
+  
+  **采用的方法**
+  1. 首先将数据使用encoder映射到隐空间，然后学习数据在隐空间的类别分布([categorical distribution](https://zhuanlan.zhihu.com/p/59550457))，
+  然后使用一个编码表对连续的隐空间表示做近似，得到离散化的表示，该离散化的表示载送入decoder进行数据还原（文章主要着笔与图像的生成，文章中使用pixelCNN作为decoder，该结构接收离散化的表示作为输入。文章也介绍了音频的生成，即序列生成。）。
+  
+  2. 进行隐空间离散化的主要方式是，将一个D维的向量通过查表操作，量化到距离他最近的一个数值上。而该表也将在训练中更新，使其能够更加接近真实值。
+  
+  3. 本文的大量笔墨用在如何对这个网络进行更新上，因为查表的量化操作是无法进行梯度计算的。
+  
+  **为何选择/如何应用**
+  1. 本文所提出的方法能够更逼真的重建样本，媲美BigGAN.
+  
+  2. 所提出的方法适用于建模离散数据，而大多数的真实世界数据均为离散化的。
+  
+  **数据集**
+  1. CIFAR10, ImageNet
+  
+  2. VCTK dataset(语音分类数据集)
+  
+  3. action sequence(deepMind的视频序列数据集)
   
   
 + IJCAI19 - CLVSA A Convolutional LSTM Based Variational Sequence-to-Sequence Model with Attention for Predicting Trends of Financial Markets
