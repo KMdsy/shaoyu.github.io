@@ -130,3 +130,19 @@
 + PewLSTM: Periodic LSTM with Weather-Aware Gating Mechanism for Parking Behavior Prediction
 
   Feng Zhang, Ningxuan Feng, Yani Liu, Cheng Yang, Jidong Zhai, Shuhao Zhang, Bingsheng He, Jiazao Lin, Xiaoyong Du
+
+## Data augmentation
+
++ Stochastic Batch Augmentation with An Effective Distilled Dynamic Soft Label Regularizer
+
+  Qian Li, Qingyuan Hu, Yong Qi, Saiyu Qi, Jie Ma, Jian Zhang
+  
++ CoSDA-ML: Multi-Lingual Code-Switching Data Augmentation for Zero-Shot Cross-Lingual NLP
+
+  Libo Qin, Minheng Ni, Yue Zhang, Wanxiang Che
+
++ Lexical-Constraint-Aware Neural Machine Translation via Data Augmentation
+
+  Guanhua Chen, Yun Chen, Yong Wang, Victor O.K. Li
+
+
