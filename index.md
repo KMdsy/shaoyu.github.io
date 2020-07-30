@@ -20,7 +20,9 @@
 
 ### 一些不定期更新的笔记
 
-+ [Here](./notes.md)
++ [Here](./notes/notes.md)
+
++ [Self-supervised learning survey](./notes/self_supervised_learning_survey.md)
 
 
 
