@@ -7,3 +7,5 @@
 + [Deep leanring or machine learning on time series with **mixed sampling rate**](./surveys/mixrate.md)
 
 + [Time series similarity learning](./surveys/timesimilar.md)
+
++ [Covid-19 data](./surveys/cov19_data.md) and [Covid-19 papers](./surveys/cov19_papers.md)
