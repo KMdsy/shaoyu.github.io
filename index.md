@@ -17,6 +17,8 @@
 
 + [关于VQ-VAE](https://www.spaces.ac.cn/archives/6760)
 
++ [如何撰写论文的Discussion](https://mitcommlab.mit.edu/broad/commkit/journal-article-discussion/)
+
 
 ### 一些不定期更新的笔记
 
