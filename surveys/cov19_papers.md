@@ -44,7 +44,7 @@
 做疫情预测的工作主要有三大类方法：
 
 1. 基于经典的传染病模型的方法，或基于这些模型进行改动，此类方法考虑了传染病的多种因素，例如R0、人口流动等。经典传染病模型包括：sub-epidemic wave model，extended susceptible-infected-removed model(eSIR)， Susceptible-Infectious-Recovered-Dead model(SIDR), SEIRD model(susceptible individuals, asymptomatic infected, symptomatic infected, recovered, and deceased)
-2. 经典的时间序列方法或变体，包括：logistic growth model，ARIMA，Wavelet-based model等
+2. 经典的时间序列方法、机器学习方法或变体，包括：logistic growth model，ARIMA，Wavelet-based model等
 3. 基于循环神经网络等方法，输入网路的数据为时间序列，包括：LSTM, GRU, RNN 及其变种，如stacked-RNN(LSTM/GRU), multi-layer RNN(LSTM/GRU)
 4. 基于外部知识/信息的方法，外部信息包括：社交网络信息，搜索引擎指数如baidu search index，地区气候信息，空间信息（某地区距离疫情震中的距离等），智能表中的人体健康数据等。此类方法结合了外部信息，能够更精确的刻画疫情的发展态势，且在官方数字滞后的情况下，还能做出比较准确的预测。此类信息还应用了基于RNN等结构，提取时间序列的动态。部分论文提出将深度学习方法与传统传染病模型结合，刻画疫情传播态势。
 
@@ -52,6 +52,7 @@
 
 #### Traditional models (ARIMA, logistic regression, epidemic model and so on)
 
+本节中的论文大致按照 “基于传染病模型的方法” -> "基于传统时间序列与机器学习方法" 的顺序排列。由于相关工作中包含了大量在预印本网站上发表的论文，因此将正式发表与未正式发表的论文分开了。
 
 ##### peer-reviewed papers
 
@@ -186,7 +187,9 @@ Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in the United St
 
 -----
 
-#### Machine learning methods
+#### Deep learning and other methods
+
+本章大致按照 “融合模型（深度学习与传统传染病模型/时间序列模型的结合  或  时间序列信息与其他信息的结合，其他信息包括：气候信息、社交媒体信息、人体健康数据等）” -> “仅利用时间序列信息的深度学习模型” 来排列。 
 
 ##### peer-reviewed papers
 
