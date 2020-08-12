@@ -26,6 +26,8 @@
 
 + [Self-supervised learning survey](./notes/self_supervised_learning_survey.md)
 
++ [如何在科学会议上做报告](./notes/nature.md)
+
 
 
 ### Email
