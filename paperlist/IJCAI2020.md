@@ -19,6 +19,25 @@
 + WATTNet: Learning to Trade FX via Hierarchical Spatio-Temporal Representation of Highly Multivariate Time Series
 
   Michael Poli, Jinkyoo Park, Ilija Ilievski
+  
++ Fair Division of Time: Multi-layered Cake Cutting
+
+  Hadi Hosseini, Ayumi Igarashi, Andrew Searns
+
+
+
++ A new attention mechanism to classify multivariate time series
+
+  Yifan Hao, Huiping Cao
+
++ Joint Time-Frequency and Time Domain Learning for Speech Enhancement
+
+  Chuanxin Tang, Chong Luo, Zhiyuan Zhao, Wenxuan Xie, Wenjun Zeng
+
+
++ Generating Robust Audio Adversarial Examples with Temporal Dependency
+
+  Hongting Zhang, Pan Zhou, Qiben Yan, Xiao-Yang Liu
 
 ## Recurrent
 
