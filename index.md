@@ -19,6 +19,8 @@
 
 + [如何撰写论文的Discussion](https://mitcommlab.mit.edu/broad/commkit/journal-article-discussion/)
 
++ [Python进度条库——tqdm](https://www.jianshu.com/p/21cf48be6bf6)
+
 
 ### 一些不定期更新的笔记
 
