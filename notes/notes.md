@@ -34,3 +34,5 @@
 3. **mode collapse**: meaning that GANs have the tendency to only generate a subset of the original dataset.
 
 4. kill -STOP 1234 将该进程暂停，如果要让它恢复到后台，用kill -CONT 1234。[ref1](https://www.cnblogs.com/kexinxin/p/9939119.html), [ref2](https://www.jianshu.com/p/d4190447736e) 
+
+5. [修复VS Code无法跳转问题](https://www.cnblogs.com/longjiang-uestc/p/11515571.html)
