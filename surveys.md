@@ -9,3 +9,5 @@
 + [Time series similarity learning](./surveys/timesimilar.md)
 
 + [Covid-19 data](./surveys/cov19_data.md) and [Covid-19 papers](./surveys/cov19_papers.md)
+
++ [监控时间序列的公开数据集](./survey/monitoring_ts.md)
