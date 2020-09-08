@@ -10,4 +10,4 @@
 
 + [Covid-19 data](./surveys/cov19_data.md) and [Covid-19 papers](./surveys/cov19_papers.md)
 
-+ [监控时间序列的公开数据集](./survey/monitoring_ts.md)
++ [监控时间序列的公开数据集](./surveys/monitoring_ts.md)
