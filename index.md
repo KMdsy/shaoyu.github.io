@@ -30,6 +30,8 @@
 
 + [如何在科学会议上做报告](./notes/nature.md)
 
++ [python 字符串用法总结](https://mp.weixin.qq.com/s/dTrW68RjQ6K0nO5CPWUjlA)
+
 
 
 ### Email
