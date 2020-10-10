@@ -33,7 +33,6 @@
 + [python 字符串用法总结](https://mp.weixin.qq.com/s/dTrW68RjQ6K0nO5CPWUjlA)
 
 + [python 内置异常总结](https://www.cnblogs.com/nmb-musen/p/10856023.html)
-
   ```python
   # 用法
   if something_True_or_False:
