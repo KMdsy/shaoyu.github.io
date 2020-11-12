@@ -18,6 +18,8 @@
 
 + [SIGKDD 2020 (2020.08.23)](./paperlist/KDD2020.md)
 
++ [NeurIPS 2020](2020.12.06)(./paperlist/nips2020.md)
+
 + [一些经典的论文](./paperlist/other_papers.md)
 
 + [Other Conferences](./paperlist/otherconf.md)
