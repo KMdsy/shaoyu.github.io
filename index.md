@@ -21,6 +21,8 @@
 
 + [Python进度条库——tqdm](https://www.jianshu.com/p/21cf48be6bf6)
 
++ 关于标准化流（normalizing flow）的通俗解释，Chinese: [part1](https://www.jianshu.com/p/66393cebe8ba), [part2](https://www.jianshu.com/p/db72c38233f3), English: [part1](https://blog.evjang.com/2018/01/nf2.html), [part2](https://blog.evjang.com/2018/01/nf1.html)
+
 
 ### 一些不定期更新的笔记
 
