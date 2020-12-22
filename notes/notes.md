@@ -38,35 +38,35 @@
 5. [修复VS Code无法跳转问题](https://www.cnblogs.com/longjiang-uestc/p/11515571.html)
 
 6. [python 内置异常总结](https://www.cnblogs.com/nmb-musen/p/10856023.html)
-  ```python
-  # 用法
-  if something_True_or_False:
-      raise ValueError # or other Error
-  ```
+    ```python
+    # 用法
+    if something_True_or_False:
+        raise ValueError # or other Error
+    ```
   
 7. Tensorflow1中关于TensorArray的用法
-  ```python
-  # 改动TensorFlow源码的时候，使用以下语句
-  i_list = tensor_array_ops.TensorArray(size=0, dtype=dtype, dynamic_size=True, name='i_list', clear_after_read=True)
-  # 当在其他环境中时，tensor_array_ops -> tf
-  
-  # 使用
-  self.j_list.write(_step, value).mark_used()
-  '''
-  def write(self, index, value, name=None):
-    """Write `value` into index `index` of the TensorArray.
-    
-    Args:
-    index: 0-D.  int32 scalar with the index to write to.
-    value: N-D.  Tensor of type `dtype`.  The Tensor to write to this index.
-    name: A name for the operation (optional).
-    
-    Returns:
-    A new TensorArray object with flow that ensures the write occurs.
-    Use this object all for subsequent operations.
-  '''
-  # 上述语句的返回需要被使用，当没有被使用的时候会在log中生成一个warning，解决方案是在write()后使用方法：mark_used()
-  ```
+    ```python
+    # 改动TensorFlow源码的时候，使用以下语句
+    i_list = tensor_array_ops.TensorArray(size=0, dtype=dtype, dynamic_size=True, name='i_list', clear_after_read=True)
+    # 当在其他环境中时，tensor_array_ops -> tf
+
+    # 使用
+    self.j_list.write(_step, value).mark_used()
+    '''
+    def write(self, index, value, name=None):
+      """Write `value` into index `index` of the TensorArray.
+
+      Args:
+      index: 0-D.  int32 scalar with the index to write to.
+      value: N-D.  Tensor of type `dtype`.  The Tensor to write to this index.
+      name: A name for the operation (optional).
+
+      Returns:
+      A new TensorArray object with flow that ensures the write occurs.
+      Use this object all for subsequent operations.
+    '''
+    # 上述语句的返回需要被使用，当没有被使用的时候会在log中生成一个warning，解决方案是在write()后使用方法：mark_used()
+    ```
 
 8. 在对LSTM/GRU的更新过程做数学上的推导的时候，遇到问题，$W * \[h_{t-1}, x_t\] + b$中的$concat$操作如何在数学上分析？其中shape of W: \[hidden_dim, hidden_dim + data_dim\](10, 11), shape of h: \[hidden_dim, 1\](10, 1), shape of x: \[data_dim, 1\](1,1), shape of b: \[hidden_dim, 1\](10, 1)
 
