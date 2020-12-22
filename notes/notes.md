@@ -67,3 +67,9 @@
   '''
   # 上述语句的返回需要被使用，当没有被使用的时候会在log中生成一个warning，解决方案是在write()后使用方法：mark_used()
   ```
+
+8. 在对LSTM/GRU的更新过程做数学上的推导的时候，遇到问题，$W * \[h_{t-1}, x_t\] + b$中的$concat$操作如何在数学上分析？其中shape of W: \[hidden_dim, hidden_dim + data_dim\](10, 11), shape of h: \[hidden_dim, 1\](10, 1), shape of x: \[data_dim, 1\](1,1), shape of b: \[hidden_dim, 1\](10, 1)
+
+  在代码中，向量为行向量，因此上述公式在代码中的实现为：$\[h_{t-1}, x_t\] * W + b$, 其中shape of W: \[hidden_dim + data_dim, hidden_dim\](11, 10), shape of h: \[1, hidden_dim\](1, 10), shape of x: \[1, data_dim\](1,1), shape of b: \[1, hidden_dim\](10, 1)。
+  
+  上述的式子$W * \[h_{t-1}, x_t\] + b$由于存在$concat$操作，而难以使用数学分析，此时可以使用$W' * h_{t-1} + u * x_t + b$代替，其中W': \[hidden_dim, hidden_dim\], u: \[hidden_dim, 1\], W = \[W', u\]
