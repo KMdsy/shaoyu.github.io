@@ -70,6 +70,27 @@
 
 8. 在对LSTM/GRU的更新过程做数学上的推导的时候，遇到问题，$W * \[h_{t-1}, x_t\] + b$中的$concat$操作如何在数学上分析？其中shape of W: \[hidden_dim, hidden_dim + data_dim\](10, 11), shape of h: \[hidden_dim, 1\](10, 1), shape of x: \[data_dim, 1\](1,1), shape of b: \[hidden_dim, 1\](10, 1)
 
-  在代码中，向量为行向量，因此上述公式在代码中的实现为：$\[h_{t-1}, x_t\] * W + b$, 其中shape of W: \[hidden_dim + data_dim, hidden_dim\](11, 10), shape of h: \[1, hidden_dim\](1, 10), shape of x: \[1, data_dim\](1,1), shape of b: \[1, hidden_dim\](10, 1)。
+    在代码中，向量为行向量，因此上述公式在代码中的实现为：$\[h_{t-1}, x_t\] * W + b$, 其中shape of W: \[hidden_dim + data_dim, hidden_dim\](11, 10), shape of h: \[1, hidden_dim\](1, 10), shape of x: \[1, data_dim\](1,1), shape of b: \[1, hidden_dim\](10, 1)。
   
-  上述的式子$W * \[h_{t-1}, x_t\] + b$由于存在$concat$操作，而难以使用数学分析，此时可以使用$W' * h_{t-1} + u * x_t + b$代替，其中W': \[hidden_dim, hidden_dim\], u: \[hidden_dim, 1\], W = \[W', u\]
+    上述的式子$W * \[h_{t-1}, x_t\] + b$由于存在$concat$操作，而难以使用数学分析，此时可以使用$W' * h_{t-1} + u * x_t + b$代替，其中W': \[hidden_dim, hidden_dim\], u: \[hidden_dim, 1\], W = \[W', u\]
+    
+    ```python
+    h = np.arange(10).reshape(1,10) # [1, 10]
+    input = np.arange(1).reshape(1,1) # [1, 1]
+    print('h shape {}, input shape: {}, concat shape: {}'.format(h.shape, input.shape, np.concatenate([h, input], axis=1).shape))
+    res = np.matmul(np.concatenate([h, input], axis=1), w_i) + b_i
+    res1 = np.matmul(h, w_i[0:10, :]) + np.matmul(input, w_i[-1, :].reshape(1, 10)) + b_i
+    pprint(res)
+    pprint(res1)
+    pprint(res == res1)
+    ```
+    output
+    ```python
+    h shape (1, 10), input shape: (1, 1), concat shape: (1, 11)
+    array([[ 1.61824865, -4.07500279,  1.56455836,  1.2925876 , -2.16892738,
+            -2.38041244, -2.28631814,  2.84973208, -4.34229152, -1.44608608]])
+    array([[ 1.61824865, -4.07500279,  1.56455836,  1.2925876 , -2.16892738,
+            -2.38041244, -2.28631814,  2.84973208, -4.34229152, -1.44608608]])
+    array([[ True,  True,  True,  True,  True,  True,  True,  True,  True,
+             True]])
+    ```
