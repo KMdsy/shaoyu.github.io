@@ -68,47 +68,47 @@
 ## 代表性论文10篇
 1. 基于手工设计的特征
 
-[1]: Ma, J., Sun, L., Wang, H., Zhang, Y., & Aickelin, U. (2016). Supervised anomaly detection in uncertain pseudoperiodic data streams. ACM Transactions on Internet Technology (TOIT), 16(1), 1-20.
+    1. Ma, J., Sun, L., Wang, H., Zhang, Y., & Aickelin, U. (2016). Supervised anomaly detection in uncertain pseudoperiodic data streams. ACM Transactions on Internet Technology (TOIT), 16(1), 1-20.
 
-[2]: Desai, U., Martis, R. J., Acharya, U. R., Nayak, C. G., Seshikala, G., & SHETTY K, R. A. N. J. A. N. (2016). Diagnosis of multiclass tachycardia beats using recurrence quantification analysis and ensemble classifiers. Journal of Mechanics in Medicine and Biology, 16(01), 1640005.
+    2. Desai, U., Martis, R. J., Acharya, U. R., Nayak, C. G., Seshikala, G., & SHETTY K, R. A. N. J. A. N. (2016). Diagnosis of multiclass tachycardia beats using recurrence quantification analysis and ensemble classifiers. Journal of Mechanics in Medicine and Biology, 16(01), 1640005.
 
 2. 无需手工设计特征的
 
-[3]: Martis, R. J., Acharya, U. R., & Min, L. C. (2013). ECG beat classification using PCA, LDA, ICA and discrete wavelet transform. Biomedical Signal Processing and Control, 8(5), 437-448.
+    3. Martis, R. J., Acharya, U. R., & Min, L. C. (2013). ECG beat classification using PCA, LDA, ICA and discrete wavelet transform. Biomedical Signal Processing and Control, 8(5), 437-448.
 
-[4]: Erkuş, E. C., & Purutçuoğlu, V. (2020). Outlier detection and quasi-periodicity optimization algorithm: Frequency domain based outlier detection (FOD). European Journal of Operational Research.
+    4. Erkuş, E. C., & Purutçuoğlu, V. (2020). Outlier detection and quasi-periodicity optimization algorithm: Frequency domain based outlier detection (FOD). European Journal of Operational Research.
 
-[5]: Iskhakova, A. O., Alekhin, M. D., & Bogomolov, A. V. (2020). Time-frequency transforms in analysis of non-stationary quasi-periodic biomedical signal patterns for acoustic anomaly detection. Информационно-управляющие системы, (1), 15-23.
+    5. Iskhakova, A. O., Alekhin, M. D., & Bogomolov, A. V. (2020). Time-frequency transforms in analysis of non-stationary quasi-periodic biomedical signal patterns for acoustic anomaly detection. Информационно-управляющие системы, (1), 15-23.
 
-[6]: Zhang, Y., & Chen, X. (2020). Anomaly Detection in Time Series with Triadic Motif Fields and Application in Atrial Fibrillation ECG Classification. arXiv preprint arXiv:2012.04936.
+    6. Zhang, Y., & Chen, X. (2020). Anomaly Detection in Time Series with Triadic Motif Fields and Application in Atrial Fibrillation ECG Classification. arXiv preprint arXiv:2012.04936.
 
-[7]: Ngo, D., & Veeravalli, B. (2015, November). Design of a real-time morphology-based anomaly detection method from ECG streams. In 2015 IEEE International Conference on Bioinformatics and Biomedicine (BIBM) (pp. 829-836). IEEE.
+    7. Ngo, D., & Veeravalli, B. (2015, November). Design of a real-time morphology-based anomaly detection method from ECG streams. In 2015 IEEE International Conference on Bioinformatics and Biomedicine (BIBM) (pp. 829-836). IEEE.
 
-[8]: Liu, F., Zhou, X., Cao, J., Wang, Z., Wang, T., Wang, H., & Zhang, Y. (2020). Anomaly Detection in Quasi-Periodic Time Series based on Automatic Data Segmentation and Attentional LSTM-CNN. IEEE Transactions on Knowledge and Data Engineering.
+    8. Liu, F., Zhou, X., Cao, J., Wang, Z., Wang, T., Wang, H., & Zhang, Y. (2020). Anomaly Detection in Quasi-Periodic Time Series based on Automatic Data Segmentation and Attentional LSTM-CNN. IEEE Transactions on Knowledge and Data Engineering.
 
-[9]: Thill, M., Däubener, S., Konen, W., & Bäck, T. (2019). Anomaly Detection in Electrocardiogram Readings with Stacked LSTM Networks. In ITAT (pp. 17-25).
+    9. Thill, M., Däubener, S., Konen, W., & Bäck, T. (2019). Anomaly Detection in Electrocardiogram Readings with Stacked LSTM Networks. In ITAT (pp. 17-25).
 
-[10]: Malhotra, P., Ramakrishnan, A., Anand, G., Vig, L., Agarwal, P., & Shroff, G. (2016). LSTM-based encoder-decoder for multi-sensor anomaly detection. arXiv preprint arXiv:1607.00148.
+    10. Malhotra, P., Ramakrishnan, A., Anand, G., Vig, L., Agarwal, P., & Shroff, G. (2016). LSTM-based encoder-decoder for multi-sensor anomaly detection. arXiv preprint arXiv:1607.00148.
 
-[11]: Dissanayake, T., Fernando, T., Denman, S., Sridharan, S., Ghaemmaghami, H., & Fookes, C. (2020). A robust interpretable deep learning classifier for heart anomaly detection without segmentation. IEEE Journal of Biomedical and Health Informatics.
+    11. Dissanayake, T., Fernando, T., Denman, S., Sridharan, S., Ghaemmaghami, H., & Fookes, C. (2020). A robust interpretable deep learning classifier for heart anomaly detection without segmentation. IEEE Journal of Biomedical and Health Informatics.
 
 ## 经典论文or强相关论文
 
-[8]: Liu, F., Zhou, X., Cao, J., Wang, Z., Wang, T., Wang, H., & Zhang, Y. (2020). Anomaly Detection in Quasi-Periodic Time Series based on Automatic Data Segmentation and Attentional LSTM-CNN. IEEE Transactions on Knowledge and Data Engineering.
+8. Liu, F., Zhou, X., Cao, J., Wang, Z., Wang, T., Wang, H., & Zhang, Y. (2020). Anomaly Detection in Quasi-Periodic Time Series based on Automatic Data Segmentation and Attentional LSTM-CNN. IEEE Transactions on Knowledge and Data Engineering.
 
-[9]: Thill, M., Däubener, S., Konen, W., & Bäck, T. (2019). Anomaly Detection in Electrocardiogram Readings with Stacked LSTM Networks. In ITAT (pp. 17-25).
+9. Thill, M., Däubener, S., Konen, W., & Bäck, T. (2019). Anomaly Detection in Electrocardiogram Readings with Stacked LSTM Networks. In ITAT (pp. 17-25).
 
-[10]: Malhotra, P., Ramakrishnan, A., Anand, G., Vig, L., Agarwal, P., & Shroff, G. (2016). LSTM-based encoder-decoder for multi-sensor anomaly detection. arXiv preprint arXiv:1607.00148.
+10. Malhotra, P., Ramakrishnan, A., Anand, G., Vig, L., Agarwal, P., & Shroff, G. (2016). LSTM-based encoder-decoder for multi-sensor anomaly detection. arXiv preprint arXiv:1607.00148.
 
-[11]: Dissanayake, T., Fernando, T., Denman, S., Sridharan, S., Ghaemmaghami, H., & Fookes, C. (2020). A robust interpretable deep learning classifier for heart anomaly detection without segmentation. IEEE Journal of Biomedical and Health Informatics.
+11. Dissanayake, T., Fernando, T., Denman, S., Sridharan, S., Ghaemmaghami, H., & Fookes, C. (2020). A robust interpretable deep learning classifier for heart anomaly detection without segmentation. IEEE Journal of Biomedical and Health Informatics.
 
 ### 异同点
 
-[8]: 提出的方法是有监督的，无法很好的适用于标签不足或标签不精确的现实情况。且缺少可解释性，无法定位异常所在的位置。
+\[8\]提出的方法是有监督的，无法很好的适用于标签不足或标签不精确的现实情况。且缺少可解释性，无法定位异常所在的位置。
 
-[9, 10]: 所提出的方法缺乏可解释性
+\[9, 10\] 所提出的方法缺乏可解释性
 
-[11]: 所使用的解释方法仅能够显示出数据对模型输出的贡献，而不能指出异常的段。
+\[11\] 所使用的解释方法仅能够显示出数据对模型输出的贡献，而不能指出异常的段。
 
 
 
