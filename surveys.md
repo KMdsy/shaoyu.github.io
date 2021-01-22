@@ -11,3 +11,7 @@
 + [Covid-19 data](./surveys/cov19_data.md) and [Covid-19 papers](./surveys/cov19_papers.md)
 
 + [监控时间序列的公开数据集](./surveys/monitoring_ts.md)
+
++ [准周期时间序列学习](./surveys/QTS.md)
+
++ [post-hoc explanation 可解释深度神经网络](./surveys/interpretability.md)
