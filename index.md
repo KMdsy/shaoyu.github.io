@@ -25,6 +25,8 @@
 
 + [关于attention，self-attention](https://cloud.tencent.com/developer/article/1600550)
 
++ [Apriori算法原理总结](https://www.cnblogs.com/pinard/p/6293298.html)
+
 
 ### 一些不定期更新的笔记
 
