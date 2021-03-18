@@ -100,6 +100,8 @@ Reference
 
     利用**多维时序指标**来动态生成服务关联，诊断根因。针对多维时间序列，该工作分析时序之间的异常关联，推断**异常行为图**来描述不同服务之间的相关性。根据行为图，该工作使用前向、自向和后向随机游走算法设计启发式模型，用以识别服务故障的根本原因。
     
+    解析可以看：[link](https://blog.csdn.net/weixin_53741275/article/details/111973738)
+    
 - Meng, Y., Zhang, S., Sun, Y., Zhang, R., Hu, Z., Zhang, Y., ... & Pei, D. (2020, June). Localizing failure root causes in a microservice through causality inference. In 2020 IEEE/ACM 28th International Symposium on Quality of Service (IWQoS) (pp. 1-10). IEEE.
 
     这项工作提出了一个框架，MicroCause，可以准确地定位导致微服务故障的根本原因的**监控指标（时间序列）**。MicroCause结合了简单而有效的路径条件时间序列（PCTS）算法以准确地捕获时间序列之间的**因果关系**，以及面向时间因果的新型随机游走方法（TCORW）
