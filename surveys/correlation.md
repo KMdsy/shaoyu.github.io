@@ -65,8 +65,6 @@ Reference
 
 ## 基于图的方法
 
-基于图的方法目前尚未形成完整的调研，目前这部分仅记录调研过程中遇到的相似文献
-
 - Wang, H., Nguyen, P., Li, J., Kopru, S., Zhang, G., Katariya, S., & Ben-Romdhane, S. (2019). GRANO: Interactive graph-based root cause analysis for cloud-native distributed data platform. Proceedings of the VLDB Endowment, 12(12), 1942-1945.
 
     这篇文章描述了在一个分布式系统中构建的异常检测系统及其原因分析平台，在图结构部分，本文构建图的方式是值得借鉴的。
@@ -78,11 +76,24 @@ Reference
     3. 图中存在两种边：1）连接组件的边，代表组件之间的从属关系；2）连接组件与异常的边，代表某个组件产生了某个异常
     4. 本文还为alarm edge设置了分数，代表了某个组件发生某个异常的严重程度，这个分数由：1）某个时间段内该异常每次发生的严重程度；2）该异常的发生频率，共同决定。
 
+    *本文在异常发生的时候，建立一个异常时的状态图，然后在图上针对异常及其连接的边计算异常严重程度分数，分数高的边所连接的组件可能就是异常*
+
 - Weng, J., Wang, J. H., Yang, J., & Yang, Y. (2018). Root cause analysis of anomalies of multitier services in public clouds. IEEE/ACM Transactions on Networking, 26(4), 1646-1659.
 
-    使用图来分析异常的扩散，以定位异常根因，如何建图，需要看看
+    这篇文章从云服务设施提供商的角度，建立了一种异常定位的方法，其中使用了有向无环图$G=(V,E)$来建模异常的传播，其中：
+    
+    1. 节点表示虚拟机VM
+    2. 边表示节点之间的两种关系，1）由service call引起的业务关联；2）由于在同一个物理主机上而可能产生资源竞争的
 
-
+    该文章假设对于某个异常$a$，它发生的时候（一般指这个异常是某个服务的等待时间过长），某个VM上的一组相关指标一定也是繁忙的（如CPU等，意思是这个指标的繁忙导致了异常的发生）。
+    
+    因此，为了找到这样的一组指标作为异常的原因，作者提出在$G$上进行随机游走，游走的过程中来计算每个vm的指标与异常服务的响应时间之间的关联关系（利用similarity，其中similarity的计算为：提高某个VM的物理指标占用，如cpu，然后测量service的响应时间，计算二者在这段时间内的相关系数），游走规则如下：
+    
+    1. walker总是更倾向于往具有更高similarity的节点去游走
+    2. walker游走到低similarity的节点的时候，可以选择返回
+    3. walker的领域均为低similarity的节点时，可以选择待着不动
+    
+    综上所述，在游走的过程中，被访问最多的节点将被视为是高可能性的异常根因。*本文在异常发生的时候，建立一个包含了物理关系与服务调用关系的网络拓扑图，然后在图上以随机游走的方式计算节点的异常程度分数，游走完毕后，即可识别出异常的根因。*
 
 
 - Ma, M., Xu, J., Wang, Y., Chen, P., Zhang, Z., & Wang, P. (2020, April). Automap: Diagnose your microservice-based web applications automatically. In Proceedings of The Web Conference 2020(pp. 246-258).
