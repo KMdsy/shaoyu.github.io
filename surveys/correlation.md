@@ -110,6 +110,85 @@ Reference
 
     **不变网络**已被证明是表征复杂系统行为的有效方法。在不变网络中，节点表示系统组件，边缘表示两个组件之间的稳定，重要的交互作用。不变性网络的结构和演化，尤其是**消失的相关性**，可以为定位因果异常和执行诊断提供重要的启示。然而，现有的利用不变网络检测因果异常的方法通常使用消失的相关性百分比来对可能的偶然分量进行排名，这有几个局限性：1）网络中的故障传播被忽略；2）根源偶然异常可能并不总是那些消失率很高的节点；3）消失的相关性的时间模式未用于鲁棒检测。为了解决这些局限性，在本文中，我们提出了一个**基于网络扩散的框架**，以识别重大的因果异常并对它们进行排名。我们的方法可以有效地对整个不变网络上的故障传播建模，并且可以对结构和随时间变化的破碎不变模式进行联合推断。
     
+    
+## 疑似是事件序列的关联分析
+
+- Noel, S., Robertson, E., & Jajodia, S. (2004, December). Correlating intrusion events and building attack scenarios through attack graph distances. In 20th Annual Computer Security Applications Conference (pp. 350-359). IEEE.
+
+- Bayomie, D., Awad, A., & Ezat, E. (2016, June). Correlating unlabeled events from cyclic business processes execution. In International Conference on Advanced Information Systems Engineering (pp. 274-289). Springer, Cham.
+
+- Dindar, N., Fischer, P. M., Soner, M., & Tatbul, N. (2011, July). Efficiently correlating complex events over live and archived data streams. In Proceedings of the 5th ACM international conference on Distributed event-based system (pp. 243-254).
+
+- Steiger, E., Resch, B., de Albuquerque, J. P., & Zipf, A. (2016). Mining and correlating traffic events from human sensor observations with official transport data using self-organizing-maps. Transportation Research Part C: Emerging Technologies, 73, 91-104.
+
+- Vlachos, M., Wu, K. L., Chen, S. K., & Philip, S. Y. (2008). Correlating burst events on streaming stock market data. Data Mining and Knowledge Discovery, 16(1), 109-133.
+
+- Koch, G. G., Koldehofe, B., & Rothermel, K. (2010, July). Cordies: Expressive event correlation in distributed systems. In Proceedings of the Fourth ACM International Conference on Distributed Event-Based Systems (pp. 26-37).
+
+- Cheng, L., Van Dongen, B. F., & Van Der Aalst, W. M. (2017, May). Efficient event correlation over distributed systems. In 2017 17th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID) (pp. 1-10). IEEE.
+
+- Gruschke, B. (1998, October). Integrated event management: Event correlation using dependency graphs. In Proceedings of the 9th IFIP/IEEE International Workshop on Distributed Systems: Operations & Management (DSOM 98) (pp. 130-141).
+
+- Jiang, G., & Cybenko, G. (2004, June). Temporal and spatial distributed event correlation for network security. In Proceedings of the 2004 American Control Conference (Vol. 2, pp. 996-1001). IEEE.
+
+- Liu, G., Mok, A. K., & Yang, E. J. (1999, May). Composite events for network event correlation. In Integrated Network Management VI. Distributed Management for the Networked Millennium. Proceedings of the Sixth IFIP/IEEE International Symposium on Integrated Network Management.(Cat. No. 99EX302) (pp. 247-260). IEEE.
+
+- Rozsnyai, S., Slominski, A., & Lakshmanan, G. T. (2011, July). Discovering event correlation rules for semi-structured business processes. In Proceedings of the 5th ACM international conference on Distributed event-based system (pp. 75-86).
+
+- Wu, G., Zhang, H., Qiu, M., Ming, Z., Li, J., & Qin, X. (2013). A decentralized approach for mining event correlations in distributed system monitoring. Journal of parallel and Distributed Computing, 73(3), 330-340.
+
+- Kotenko, I., Fedorchenko, A., Saenko, I., & Kushnerevich, A. (2018, March). Parallelization of security event correlation based on accounting of event type links. In 2018 26th Euromicro International Conference on Parallel, Distributed and Network-based Processing (PDP) (pp. 462-469). IEEE.
+
+- Xuewei, F., Dongxia, W., Jiemei, Z., Guoqing, M., & Jin, L. (2010, June). Analyzing and correlating security events using state machine. In 2010 10th IEEE International Conference on Computer and Information Technology (pp. 2849-2854). IEEE.
+
+- Hasan, M., Sugla, B., & Viswanathan, R. (1999, May). A conceptual framework for network management event correlation and filtering systems. In Integrated Network Management VI. Distributed Management for the Networked Millennium. Proceedings of the Sixth IFIP/IEEE International Symposium on Integrated Network Management.(Cat. No. 99EX302) (pp. 233-246). IEEE.
+
+- Skopik, F., & Fiedler, R. (2013). Intrusion detection in distributed systems using fingerprinting and massive event correlation. INFORMATIK 2013–Informatik angepasst an Mensch, Organisation und Umwelt.
+
+- Flammini, F., Mazzocca, N., Pappalardo, A., Pragliola, C., & Vittorini, V. (2011, August). Augmenting surveillance system capabilities by exploiting event correlation and distributed attack detection. In International Conference on Availability, Reliability, and Security (pp. 191-204). Springer, Berlin, Heidelberg.
+
+- Martin-Flatin, J. P. (2004, June). Distributed event correlation and self-managed systems. In Proceedings of the 1st International Workshop on Self-* Properties in Complex Information Systems (Self-Star 2004) (pp. 61-64).
+
+- Griffith, R., Hellerstein, J., Kaiser, G., & Diao, Y. (2006, June). Dynamic adaptation of temporal event correlation for qos management in distributed systems. In 200614th IEEE International Workshop on Quality of Service (pp. 290-294). IEEE.
+
+- Steinert, R., Gestrelius, S., & Gillblad, D. (2011, December). A distributed spatio-temporal event correlation protocol for multi-layer virtual networks. In 2011 IEEE Global Telecommunications Conference-GLOBECOM 2011 (pp. 1-5). IEEE.
+
+- Griffith, R., Hellerstein, J. L., Diao, Y., & Kaiser, G. E. (2005). Dynamic Adaptation of Rules for Temporal Event Correlation in Distributed Systems.
+
+- Fu, X., Ren, R., Zhan, J., Zhou, W., Jia, Z., & Lu, G. (2012, October). Logmaster: Mining event correlations in logs of large-scale cluster systems. In 2012 IEEE 31st Symposium on Reliable Distributed Systems (pp. 71-80). IEEE.
+
+- Myers, J., Grimaila, M., & Mills, R. (2010, April). Insider threat detection using distributed event correlation of web server logs. In International Conference on Cyber Warfare and Security (p. 251). Academic Conferences International Limited.
+
+- Myers, J., Grimaila, M., & Mills, R. (2010, April). Insider threat detection using distributed event correlation of web server logs. In International Conference on Cyber Warfare and Security (p. 251). Academic Conferences International Limited.
+
+- Myers, J., Grimaila, M. R., & Mills, R. F. (2011, January). Log-based distributed security event detection using simple event correlator. In 2011 44th Hawaii International Conference on System Sciences (pp. 1-7). IEEE.
+
+- Parekh, J. J. (2005). Privacy-Preserving Distributed Event Correlation.
+
+- Kato, N., Ohta, K., Ika, T., Mansfield, G., & Nemoto, Y. (1999). A proposal of event correlation for distributed network fault management and its evaluation. IEICE Transactions on Communications, 82(6), 859-867.
+
+- Cerullo, G., Coppolino, L., D’Antonio, S., Formicola, V., Papale, G., & Ragucci, B. (2016). Enabling convergence of physical and logical security through intelligent event correlation. In Intelligent Distributed Computing IX (pp. 427-437). Springer, Cham.
+
+- Alves, P. G. (2014). A Distributed Security Event Correlation Platform for SCADA (Doctoral dissertation, Universidade de Coimbra).
+
+- Zhang, B., & Al-Shaer, E. (2007, October). Self-organizing monitoring agents for hierarchical event correlation. In International Workshop on Distributed Systems: Operations and Management (pp. 13-24). Springer, Berlin, Heidelberg.
+
+- Katker, S. (1996, March). A modeling framework for integrated distributed systems fault management. In Proceedings of IFIP/IEEE International Conference on Distributed Platforms (pp. 186-198). IEEE.
+
+- Teufl, P., Payer, U., & Fellner, R. (2010, February). Event correlation on the basis of activation patterns. In 2010 18th Euromicro Conference on Parallel, Distributed and Network-based Processing (pp. 631-640). IEEE.
+
+- Yoneki, E. (2010). Time/space aware event correlation. In Principles and Applications of Distributed Event-Based Systems (pp. 43-74). IGI Global.
+
+- Guo, N., Gao, T., Zhang, B., & Zhao, H. (2007, October). Distributed and scalable event correlation based on causality graph. In Asia-Pacific Network Operations and Management Symposium (pp. 567-570). Springer, Berlin, Heidelberg.
+
+- Tai, W., OSullivan, D., & Keeney, J. (2008, April). Distributed fault correlation scheme using a semantic publish/subscribe system. In NOMS 2008-2008 IEEE Network Operations and Management Symposium (pp. 835-838). IEEE.
+
+- Marwede, N., Rohr, M., van Hoorn, A., & Hasselbring, W. (2009, March). Automatic failure diagnosis support in distributed large-scale software systems based on timing behavior anomaly correlation. In 2009 13th European Conference on Software Maintenance and Reengineering (pp. 47-58). IEEE.
+
+- Fu, S., & Xu, C. Z. (2007, October). Quantifying temporal and spatial correlation of failure events for proactive management. In 2007 26th IEEE International Symposium on Reliable Distributed Systems (SRDS 2007) (pp. 175-184). IEEE.
+
+- 
+    
 
 
     
