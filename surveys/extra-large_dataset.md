@@ -1,6 +1,6 @@
 # 超大规模数据集（TB级别以上）调研
 
-本调研总结了TB级别以上数据集的简单说明与地址，不限数据类型。其中包含了一些压缩后不足1TB的数据集，他们的原始文件大小均为1TB以上
+本调研总结了TB级别以上数据集的简单说明与地址，不限数据类型。其中包含了一些压缩后不足1TB的数据集，他们的原始文件大小均为1TB以上.
 
 ## 文本数据
 
@@ -33,7 +33,7 @@ This dataset is over `1 terabyte` uncompressed.
 Segment-rated frame-level features dataset, Frame-level features dataset (`1.53TB`), Video-level features dataset (`31GB`)
   + download: http://research.google.com/youtube8m/download.html
   + paper: YouTube-8M: A Large-Scale Video Classification Benchmark (https://arxiv.org/abs/1609.08675)
-  + Google
+  + institution: Google
 
 - StarCraft: Brood War replay dataset yet, with 65646 games. The full dataset `after compression` is `365 GB`, 
 1535 million frames, and 496 million player actions. The entire frame data was dumped out at 8 frames per second.
