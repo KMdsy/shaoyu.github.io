@@ -1,6 +1,6 @@
 # 超大规模数据集（TB级别以上）调研
 
-本调研总结了TB级别以上数据集的简单说明与地址，不限数据类型
+本调研总结了TB级别以上数据集的简单说明与地址，不限数据类型。其中包含了一些压缩后不足1TB的数据集，他们的原始文件大小均为1TB以上
 
 ## 文本数据
 
@@ -30,7 +30,7 @@ This dataset is over `1 terabyte` uncompressed.
 ## 视频/图像数据
 
 - YouTube-8M: A Large-Scale Video Classification Benchmark. 包含三个级别的视频数据及其标注：
-Segment-rated frame-level features dataset, Frame-level features dataset (1.53TB), Video-level features dataset (31GB)
+Segment-rated frame-level features dataset, Frame-level features dataset (`1.53TB`), Video-level features dataset (`31GB`)
   + download: http://research.google.com/youtube8m/download.html
   + paper: YouTube-8M: A Large-Scale Video Classification Benchmark (https://arxiv.org/abs/1609.08675)
   + Google
@@ -51,7 +51,16 @@ Segment-rated frame-level features dataset, Frame-level features dataset (1.53TB
   + institution: Facebook AI
 
 - Open Images Dataset: Open Images is a dataset of ~9 million URLs to images that have been annotated with labels
-spanning over 6000 categories, `561GB after compressed`.
+spanning over 6000 categories, `561GB after compressed, 18TB uncompressed`.
   + download: https://github.com/cvdfoundation/open-images-dataset#download-images-with-bounding-boxes-annotations
+
+## 其他数据集
+
+这些数据集无法准确的列出大小或下载地址，但都是公开的数据集，其大小参考了一些已发表论文中的描述
+
+- Sloan Digital Sky Survey (SDSS) dataset: one of the largest astronomical catalogs publicly accessible (`more than 3.4TB`).
+  + download: https://www.sdss.org/dr13/
+  + paper: *Dawson, K. S., Kneib, J. P., Percival, W. J., Alam, S., Albareti, F. D., Anderson, S. F., ... & Zou, H. (2016). The SDSS-IV extended Baryon Oscillation Spectroscopic Survey: overview and early data. The Astronomical Journal, 151(2), 44.*
+  + find this dataset in: *Yan, Y., Cao, L., Kulhman, C., & Rundensteiner, E. (2017, August). Distributed local outlier detection in big data. In Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining (pp. 1225-1234).*
 
 
