@@ -1,4 +1,4 @@
-# interpretable DNN paper list
+# Self-explaining DNN: Paper List
 
 key words: Self-explaining models, 
 
