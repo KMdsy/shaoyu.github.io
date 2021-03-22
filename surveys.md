@@ -14,7 +14,7 @@
 
 + [准周期时间序列学习](./surveys/QTS.md)
 
-+ [*Post-hoc* Deep Neural Network](./surveys/interpretability.md); [*self-explaining* Deep Neural Network](./surveys/interpretable_DNN.md)
++ [*Post-hoc* Deep Neural Network](./surveys/interpretability.md) and [*self-explaining* Deep Neural Network](./surveys/interpretable_DNN.md)
 
 + [关于关联分析](./surveys/correlation.md)
 
