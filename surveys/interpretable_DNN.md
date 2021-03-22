@@ -30,11 +30,11 @@ discuss how this mechanism of interpretation is preserved.
 > only to one of a few input variables, which makes attribution
 > of their prediction on the input variables straightforward.
 >
->> [25] W. Brendel and M. Bethge, "Approximating CNNs with bag-of-local-features models works surprisingly well on imagenet", Proc. 7th Int. Conf. Learn. Represent., 2019.
->> [28] R. Caruana, Y. Lou, J. Gehrke, P. Koch, M. Sturm and N. Elhadad, "Intelligible models for healthcare: Predicting pneumonia risk and hospital 30-day readmission", Proc. 21th ACM SIGKDD Int. Conf. Knowl. Discovery Data Mining, pp. 1721-1730, 2015.
->> [111] M. Lin, Q. Chen and S. Yan, "Network in network", Proc. Int. Conf. Learn. Represent. (ICLR), 2014.
->> [143] B. Poulin et al., "Visual explanation of evidence with additive classifiers", Proc. 21st Nat. Conf. Artif. Intell. 18th Innov. Appl. Artif. Intell. Conf., pp. 1822-1829, 2006.
->> [206] B. Zhou, A. Khosla, A. Lapedriza, A. Oliva and A. Torralba, "Learning deep features for discriminative localization", Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), pp. 2921-2929, Jun. 2016.
+>> - [25] W. Brendel and M. Bethge, "Approximating CNNs with bag-of-local-features models works surprisingly well on imagenet", Proc. 7th Int. Conf. Learn. Represent., 2019.
+>> - [28] R. Caruana, Y. Lou, J. Gehrke, P. Koch, M. Sturm and N. Elhadad, "Intelligible models for healthcare: Predicting pneumonia risk and hospital 30-day readmission", Proc. 21th ACM SIGKDD Int. Conf. Knowl. Discovery Data Mining, pp. 1721-1730, 2015.
+>> - [111] M. Lin, Q. Chen and S. Yan, "Network in network", Proc. Int. Conf. Learn. Represent. (ICLR), 2014.
+>> - [143] B. Poulin et al., "Visual explanation of evidence with additive classifiers", Proc. 21st Nat. Conf. Artif. Intell. 18th Innov. Appl. Artif. Intell. Conf., pp. 1822-1829, 2006.
+>> - [206] B. Zhou, A. Khosla, A. Lapedriza, A. Oliva and A. Torralba, "Learning deep features for discriminative localization", Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), pp. 2921-2929, Jun. 2016.
 
 4. Agarwal, R., Frosst, N., Zhang, X., Caruana, R., & Hinton, G. E. (2020). Neural additive models: Interpretable machine learning with neural nets. arXiv preprint arXiv:2004.13912.
 
@@ -54,8 +54,8 @@ discuss how this mechanism of interpretation is preserved.
 > to deal with the special LSTM blocks in recurrent neural
 > networks [11], [9]
 >
->> [9] L. Arras et al., "Explaining and interpreting LSTMs" in Explainable AI: Interpreting Explaining and Visualizing Deep Learning, Cham, Switzerland:Springer, vol. 11700, pp. 211-238, 2019.
->> [11] L. Arras, G. Montavon, K.-R. Müller and W. Samek, "Explaining recurrent neural network predictions in sentiment analysis", Proc. 8th Workshop Comput. Approaches to Subjectivity Sentiment Social Media Anal., pp. 159-168, 2017.
+>> - [9] L. Arras et al., "Explaining and interpreting LSTMs" in Explainable AI: Interpreting Explaining and Visualizing Deep Learning, Cham, Switzerland:Springer, vol. 11700, pp. 211-238, 2019.
+>> - [11] L. Arras, G. Montavon, K.-R. Müller and W. Samek, "Explaining recurrent neural network predictions in sentiment analysis", Proc. 8th Workshop Comput. Approaches to Subjectivity Sentiment Social Media Anal., pp. 159-168, 2017.
 
 
 6. Marcinkevičs, R., & Vogt, J. E. (2021). Interpretable Models for Granger Causality Using Self-explaining Neural Networks. ICLR 2021.
@@ -70,7 +70,7 @@ discuss how this mechanism of interpretation is preserved.
 - [1] Chakraborty, S., Tomsett, R., Raghavendra, R., Harborne, D., Alzantot, M., Cerutti, F., ... & Gurram, P. (2017, August). Interpretability of deep learning models: a survey of results. In 2017 IEEE smartworld, ubiquitous intelligence & computing, advanced & trusted computed, scalable computing & communications, cloud & big data computing, Internet of people and smart city innovation (smartworld/SCALCOM/UIC/ATC/CBDcom/IOP/SCI) (pp. 1-6). IEEE.
 
 <div id="refer-anchor-2"></div>
-- [2]Samek, W., Montavon, G., Lapuschkin, S., Anders, C. J., & Müller, K. R. (2021). Explaining Deep Neural Networks and Beyond: A Review of Methods and Applications. Proceedings of the IEEE, 109(3), 247-278.
+- [2] Samek, W., Montavon, G., Lapuschkin, S., Anders, C. J., & Müller, K. R. (2021). Explaining Deep Neural Networks and Beyond: A Review of Methods and Applications. Proceedings of the IEEE, 109(3), 247-278.
 
 
 
