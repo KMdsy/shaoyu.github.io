@@ -154,17 +154,25 @@ from streaming and real-time applications, while [Harvard](9), [ELKI](8), [LMU](
 	
 	没啥用，讲使用trace数据，建模系统中微服务之间的依赖关系，并建立为图模型，然后计算出每个依赖关系之间的应答响应时间
 
-- Localizing Failure Root Causes in a Microservice through Causality Inference
+- Localizing Failure Root Causes in a Microservice through Causality Inference (基于微服务KPI数据)
 	
 	Yuan Meng; Shenglin Zhang; Yongqian Sun; Ruru Zhang; Zhilong Hu; Yiyin Zhang, ...
 	
 	2020 IEEE/ACM 28th International Symposium on Quality of Service (IWQoS)
 	
-- Unsupervised Detection of Microservice Trace Anomalies through Service-Level Deep Bayesian Networks
+	我们设计了一种新的PCTS(路径条件时间序列)算法，在充分利用传播延迟的情况下学习监控指标的依赖图。在PCTS中，我们首先采用改进的PC[10]学习时间序列中每个点的因果图。然后生成两个时间序列之间的边，生成失效因果图。
+	
+	我们提出了一种新的基于时间原因的随机漫步(TCORW)方法。在TCORW中，我们成功地整合了三种类型的信息:(1)监测指标的因果关系;(2)度量的异常信息，包括发生时间和异常程度;(3)基于领域知识获得的度量优先级
+	
+	结合PCTS和TCORW，我们提出了一个新的框架——微原因，来推断微服务失败的前N个根本原因。据我们所知，这是在微服务中定位故障根源的第一个工作。
+	
+- Unsupervised Detection of Microservice Trace Anomalies through Service-Level Deep Bayesian Networks (基于微服务trace数据)
 
 	Ping Liu; Haowen Xu; Qianyu Ouyang; Rui Jiao; Zhekang Chen; Shenglin Zhang; ...
 	
 	2020 IEEE 31st International Symposium on Software Reliability Engineering (ISSRE)
+	
+	
 
 	
 
