@@ -19,3 +19,5 @@
 + [关于关联分析](./surveys/correlation.md)
 
 + [超大规模数据集调研](./surveys/extra-large_dataset.md)
+
++ [微服务应用系统的异常检测调研，特别是多源异构数据的融合](./surveys/aiops_micro-service.md)
