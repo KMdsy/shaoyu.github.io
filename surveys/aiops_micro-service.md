@@ -154,11 +154,13 @@ from streaming and real-time applications, while [Harvard](9), [ELKI](8), [LMU](
 	
 	没啥用，讲使用trace数据，建模系统中微服务之间的依赖关系，并建立为图模型，然后计算出每个依赖关系之间的应答响应时间
 
-- Localizing Failure Root Causes in a Microservice through Causality Inference (基于微服务KPI数据)
+- Localizing Failure Root Causes in a Microservice through Causality Inference 
 	
 	Yuan Meng; Shenglin Zhang; Yongqian Sun; Ruru Zhang; Zhilong Hu; Yiyin Zhang, ...
 	
 	2020 IEEE/ACM 28th International Symposium on Quality of Service (IWQoS)
+	
+	**基于微服务KPI数据的关联推断方法**
 	
 	我们设计了一种新的PCTS(路径条件时间序列)算法，在充分利用传播延迟的情况下学习监控指标的依赖图。在PCTS中，我们首先采用改进的PC[10]学习时间序列中每个点的因果图。然后生成两个时间序列之间的边，生成失效因果图。
 	
@@ -166,22 +168,25 @@ from streaming and real-time applications, while [Harvard](9), [ELKI](8), [LMU](
 	
 	结合PCTS和TCORW，我们提出了一个新的框架——微原因，来推断微服务失败的前N个根本原因。据我们所知，这是在微服务中定位故障根源的第一个工作。
 	
-- Unsupervised Detection of Microservice Trace Anomalies through Service-Level Deep Bayesian Networks (基于微服务trace数据)
+- Unsupervised Detection of Microservice Trace Anomalies through Service-Level Deep Bayesian Networks
 
 	Ping Liu; Haowen Xu; Qianyu Ouyang; Rui Jiao; Zhekang Chen; Shenglin Zhang; ...
 	
 	2020 IEEE 31st International Symposium on Software Reliability Engineering (ISSRE)
 	
+	**基于微服务trace数据，检测意外的调用关系或者意外的调用响应时间**
 	
-
-	
-
-
 - Performance Diagnosis in Cloud Microservices using Deep Learning
 	
 	Li Wu, Jasmin Bogatinovski, Sasho Nedelkoski, Johan Tordsson and Odej Kao
 	
 	2020 AIOPS workshop
+	
+	**多源时间序列的异常检测与根因定位**——我们从多个数据源收集数据，包括应用程序、操作系统和网络，以提供由不同根源(如软件bug、硬件问题、资源争用等)引起的性能问题的罪魁祸首。我们的系统被设计成**与应用程序无关的**，不需要应用程序使用仪器来获取数据。相反，我们收集应用程序和运行时系统本身报告的指标。
+	
+	本文提出了一种应用不可知系统，以细粒度定位微服务性能下降的罪魁祸首，不仅包括产生性能问题的异常服务，还包括与服务异常相关的罪魁祸首指标。我们的方法首先通过构建服务依赖图来发现潜在的罪魁祸首服务，然后应用自动编码器根据重构错误的排序列表来识别异常服务指标。
+	
+	我们采用两阶段方法进行异常检测和根本原因分析(系统概述在第3节中描述)。在第一阶段，我们根据基于图的方法[16]对导致故障的服务进行建模。这使我们能够通过识别导致错误服务性能下降的根本原因(异常度量)来查明引发性能下降的潜在错误服务。第二阶段，对潜在故障的推断，是基于以下假设:故障行为的最重要症状与正常运行时的值存在显著偏差。在任何时间点测量每个症状的个体贡献，从而导致观察到的行为与正常行为之间的差异，从而可以定位最可能反映故障的症状。有了这个假设，我们的目标是在正常系统行为下模拟症状值
 	
 
 	
@@ -190,6 +195,13 @@ from streaming and real-time applications, while [Harvard](9), [ELKI](8), [LMU](
 	Dominik Scheinert and Alexander Acker
 	
 	2020 AIOPS workshop
+	
+	多维时间序列的异常分类任务，即不仅只识别正异常，还是被异常的种类
+
+	我们提出了一种通过训练分类模型来识别再次出现的异常的方法。利用系统度量数据，如CPU利用率、已分配内存或磁盘I/O统计数据，并将这些数据建模为多元时间序列，我们的模型能够识别异常类型特定的模式，并为它们分配各自的异常标签。
+
+	我们提出的模型架构TELESTO利用一种新颖的图神经网络架构，在空间和时间维度上利用多变量时间序列建模为图。它不受维度变化的影响，优于其他两种常用的图神经网络方法。
+
 	
 ----
 
@@ -205,6 +217,10 @@ from streaming and real-time applications, while [Harvard](9), [ELKI](8), [LMU](
 	
 	2019 IEEE 12th International Conference on Cloud Computing (CLOUD)
 	
+	从trace数据中解析多模态数据以进行学习，多模态指“service response time in the form of real-valued data”， “causal relationships with other related services repre-
+	sented as a sequence of textual labels.”
+
+	我们提出了一种用于序列学习的深度学习模型，利用单模态顺序文本数据在跟踪中对服务之间的因果关系进行建模。我们展示了响应时间作为跟踪中的第二种数据类型的重要性，以及对其建模的挑战。通过引入一个模型，我们扩展了单模态体系结构，该模型利用多模态跟踪数据作为文本和实值序列的组合。我们表明，多模态方法可以用于建模正常的系统行为和检测异常，不仅考虑到服务的因果关系，而且还考虑它们在跟踪内的响应时间。此外，我们使用该模型来检测依赖的和并行的任务，以重构执行路径。
 
 	
 - Self-Supervised Anomaly Detection from Distributed Traces
