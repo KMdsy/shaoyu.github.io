@@ -38,84 +38,6 @@
 	联合使用日志（时间数据）和调用链数据query trace（空间数据）做特征提取与融合，并构建one-class classifier
 	
 	
-
-	
-
-	
-
-	
-
-**conclusion:** 
-目前来讲，已有的工作包括联合使用trace与log数据，此外也有kpi+log的工作，但是三者相结合，或者kpi+trace的工作还没有。所有的工作大体处于较为基础的阶段，即对缺失数据、可解释方法、数据特性等研究的还不够
-
-**需要做的事情：**
-1. 需要了解云原生系统的内部结构，对日志数据、调用链数据的生成与特性有明确的认知与归纳。方法，从开源代码入手，尝试搭建一个微服务测试平台，尝试做数据收集的实验。
-
-2. 先能够了解清楚每个数据的特性，尝试复现一个多源异构数据异常检测的工作。
-
-3. 从复现过程与系统搭建过程中考虑适当的应用场景，联合利用服务性能指标数据（KPI，时间序列）、微服务日志（非结构化文本数据）、调用链数据进行异常检测。
-
-4. 将上述场景下的可解释的异常检测作为工作的重点。
-
-**数据**
-
-1. https://zenodo.org/record/3549604#.YEGfWI5LiUk
-	
-	一个公开数据集，里面包括AIOPS常见的三种数据
-	
-
-	
-2. test bed搭建：
-
-	framework：OpenStack, Kolla-Ansible(dockerized environment)/k8s
-	For the **metrics** collection across the physical nodes in the infrastructure, we utilize [Glances](20),
-	
-	OpenStack introduces a small but powerful library called [*osprofiler*](21) that is used by all OpenStack projects and their Python clients to generate **traces**.
-	
-	The **log** files are distributed over the infrastructure and they are grouped in directories by the OpenStack projects (e.g., nova, neutron, glance, etc.) at the wally nodes.
-	
-	
-	
-	
-	
-	
-	anomaly injection: (ref) Multi-source Distributed System Data for AI-Powered Analytics
-	
-	To generate workloads and inject faults into the infrastructure we used [Rally](25)
-	
-	
-----
-### Trace data
-	
-1. Azure Public dataset: composes of two datasets representing two representative traces of the virtual machine of Microsoft Azure
-	
-	[link](5)
-	
-2. Alibaba’s cluster data is a collection of two datasets from real-world production
-
-	[link](2, 14, 28)
-	
-3. Google’s collection of two tracing datasets originates from parts of Google cluster management software and systems
-
-	[link](10)
-	
-### metric data
-
-1. A plethora of available collections of datasets containing metric data can be found in Stonybrook
-
-	[link](31)
-
-2. [Numenta](1) predominantly contains datasets
-from streaming and real-time applications, while [Harvard](9), [ELKI](8), [LMU](15) store network intrusion data.
-
-
-### log data
-
-1. The [CFDR resource](3) stores links or 19 log datasets grouped in 11 data collections.
-
-2. The second resource is the [loghub data resource](35).
-	
-	
 ### 微服务架构下的异常检测
 
 #### 基于调用链数据
@@ -259,12 +181,64 @@ from streaming and real-time applications, while [Harvard](9), [ELKI](8), [LMU](
 
 --------------
 	
-### Dataset
+## Dataset
 
-- ToN IoT-The role of heterogeneity and the need for standardization of features and attack types in IoT network intrusion datasets
+1. ToN IoT-The role of heterogeneity and the need for standardization of features and attack types in IoT network intrusion datasets
 
 
-### 没啥用的文章
+2. https://zenodo.org/record/3549604#.YEGfWI5LiUk
+	
+	一个公开数据集，里面包括AIOPS常见的三种数据
+	
+
+	
+3. test bed搭建：
+
+	framework：OpenStack, Kolla-Ansible(dockerized environment)/k8s
+	For the **metrics** collection across the physical nodes in the infrastructure, we utilize [Glances](20),
+	
+	OpenStack introduces a small but powerful library called [*osprofiler*](21) that is used by all OpenStack projects and their Python clients to generate **traces**.
+	
+	The **log** files are distributed over the infrastructure and they are grouped in directories by the OpenStack projects (e.g., nova, neutron, glance, etc.) at the wally nodes.
+	
+	anomaly injection: (ref) Multi-source Distributed System Data for AI-Powered Analytics
+	
+	To generate workloads and inject faults into the infrastructure we used [Rally](25)	
+
+### Trace data
+	
+1. Azure Public dataset: composes of two datasets representing two representative traces of the virtual machine of Microsoft Azure
+	
+	[link](5)
+	
+2. Alibaba’s cluster data is a collection of two datasets from real-world production
+
+	[link](2, 14, 28)
+	
+3. Google’s collection of two tracing datasets originates from parts of Google cluster management software and systems
+
+	[link](10)
+	
+### metric data
+
+1. A plethora of available collections of datasets containing metric data can be found in Stonybrook
+
+	[link](31)
+
+2. [Numenta](1) predominantly contains datasets
+from streaming and real-time applications, while [Harvard](9), [ELKI](8), [LMU](15) store network intrusion data.
+
+
+### log data
+
+1. The [CFDR resource](3) stores links or 19 log datasets grouped in 11 data collections.
+
+2. The second resource is the [loghub data resource](35).
+	
+
+------------------
+
+## 没啥用的文章
 
 - **MicroMon: A Monitoring Framework for Tackling Distributed Heterogeneity**
 
