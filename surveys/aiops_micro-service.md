@@ -21,8 +21,20 @@
 	
 	2020 AIOPS workshop
 	
-	联合使用了日志与trace数据做异常检测
-	
+	- 本工作联合考虑了日志数据与trace数据，开发了一种span2vec的方法，用于将trace数据像log数据一样表示为一系列的模板数据，进一步的便于与日志数据进行融合。
+
+	- 异常检测任务在本文中被转化为了一个“下一步模板预测”的**有监督任务**，可以分别对下一步可能出现的日志与模板进行预测，则偏离预测的trace/log模板即为异常。
+
+	- 在本工作中，log与trace数据提供了不同角度的系统状态信息——日志数据可以在服务级别上有更丰富的描述，可以被视为服务运行的的指纹。Trace数据中则没有太多上述系统级的信息，但包含执行一次用户清请求的总流程图。但是从结果上来看，日志数据的加入，提升了预测trace异常的recall，但反之，trace数据的的加入并没有显著提升log数据的异常检测性能。可能的原因在于log的数据粒度比较大。
+
+	> One explanation of this behaviour is that the granularity of the information from the
+	> logs is truncated on the level of the data source with a lower frequency of generation
+	> -- the trace is harder for the information in the trace to be transferred to the logs. The
+	> information that the multimodal method is receiving from the logs when it is aiming to
+	> predict the next relevant span complements the information as obtained just from the
+	> sequence of spans individually.
+
+
 	
 - **Multi-source Distributed System Data for AI-Powered Analytics**
 
@@ -106,7 +118,8 @@
 	
 	为解决调用关系异常，本文**首先**收集软件测试期间的调用链数据用于合成应用运行时的tarce tree，注意由于trace tree会因为调用携带的参数不同而不同，因此在软件测试阶段收集（几乎）所有情况的调用关系数据是有必要的。**然后**将实时的调用链数据与刚才的baseline之间计算最小编辑距离（baseline中有多种调用baseline，因此需要与每一个baseline计算他们之间的距离，取距离最小的baseline作为正常模板，并计算anomaly score），以作为anomaly score。
 	
-	![image](https://user-images.githubusercontent.com/16149619/115551293-6ae81980-a2dd-11eb-97fa-11709d15d3ad.png)
+	>  To construct a baseline execution trace set S, for every arrival execution trace T_i, if we
+	>  cannot match T_i with an execution trace C_i in S, we add T_i in S.
 	
 	调用时间在物理资源充分的情况下，一般是不会有大的波动的，因此，调用时间的激增就可以被视为一个调用时间异常。为了识别_激增_，本文使用coefficient of variation（CV）来表示一次请求的响应时间异常程度。此时的trace数据被用一个$M \times N$的metrix表示，其中第m行第n列表示，在第i次用户请求时，第j个组件（微服务）的响应情况。然后借助PCA对矩阵进行分解，用来识别导致异常的微服务。这里没太看懂。
 
