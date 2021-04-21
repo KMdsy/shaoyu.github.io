@@ -4,6 +4,10 @@
 
 [2020 AIOPS workshop](https://aiopsworkshop.github.io/accepted_papers/index.html)
 
+## 一些笔记
+
+在相关工作中，所要检测的异常如何定义，是一个关键的问题。<a href='#lundetecting2019'>本文提到</a>"error messages", "performance degradations"与"trace structure and response time anomalies"本身就是几种不同的异常类型，融合多种数据将有助于我们探测更多种类的异常。
+
 ## 相关论文
 
 ### 关于多源数据融合的文章
@@ -91,11 +95,25 @@
 	2019 19th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID)
 
 
-- Detecting anomalies in microservices with execution trace comparison
+- <a name='lundetecting2021'>1</a>Detecting anomalies in microservices with execution trace comparison
 
 	Lun Meng, Feng Ji, Yao Sun, TaoWang
 	
 	Future Generation Computer Systems, Volume 116, March 2021, Pages 291-301
+
+	本文所建立的调用树中包含了两种调用关系——本地调用（两个微服务位于同一个主机，彼此之间进行调用）、远程调用（两个微服务不在同一个主机，远程调用）。
+	
+	本文提出了一种基于调用链数据的异常检测方法，拟检测的异常分为两种：1) 调用关系异常：调用关系本身并不是一成不变的，调用关系会因为调用时的参数而发生动态变化，但是某些异常会导致微服务调用不常见的异常的调用总是与已有的调用关系不同，因此可以被检测出来；2) 调用响应异常：这种异常不会破坏调用关系，但是会直接影响服务迟延，因此也是异常。
+	
+	为解决调用关系异常，本文**首先**收集软件测试期间的调用链数据用于合成应用运行时的tarce tree，注意由于trace tree会因为调用携带的参数不同而不同，因此在软件测试阶段收集（几乎）所有情况的调用关系数据是有必要的。**然后**将实时的调用链数据与刚才的baseline之间计算最小编辑距离（baseline中有多种调用baseline，因此需要与每一个baseline计算他们之间的距离，取距离最小的baseline作为正常模板，并计算anomaly score），以作为anomaly score。
+	
+![image](https://user-images.githubusercontent.com/16149619/115551293-6ae81980-a2dd-11eb-97fa-11709d15d3ad.png)
+	
+	调用时间在物理资源充分的情况下，一般是不会有大的波动的，因此，调用时间的激增就可以被视为一个调用时间异常。为了识别_激增_，本文使用coefficient of variation（CV）来表示一次请求的响应时间异常程度。此时的trace数据被用一个$M*N$的metrix表示，其中第m行第n列表示，在第i次用户请求时，第j个组件（微服务）的响应情况。然后借助PCA对矩阵进行分解，用来识别导致异常的微服务。这里没太看懂。
+
+![image](https://user-images.githubusercontent.com/16149619/115550685-b9e17f00-a2dc-11eb-9094-980b220a86f3.png)
+![image](https://user-images.githubusercontent.com/16149619/115550693-bea63300-a2dc-11eb-8f08-d44732ca1b41.png)
+
 	
 	
 - Midiag: A Sequential Trace-Based Fault Diagnosis Framework for Microservices
