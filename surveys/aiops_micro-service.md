@@ -66,7 +66,7 @@
 	讲使用trace数据，建模系统中微服务之间的依赖关系，并建立为图模型，然后计算出每个依赖关系之间的应答响应时间
 	
 
-- Unsupervised Detection of Microservice Trace Anomalies through Service-Level Deep Bayesian Networks
+- **Unsupervised Detection of Microservice Trace Anomalies through Service-Level Deep Bayesian Networks**
 
 	Ping Liu; Haowen Xu; Qianyu Ouyang; Rui Jiao; Zhekang Chen; Shenglin Zhang; ...
 	
@@ -75,7 +75,7 @@
 	**基于微服务trace数据，检测意外的调用关系或者意外的调用响应时间**
 	
 
-- Anomaly Detection from System Tracing Data Using Multimodal Deep Learning
+- **Anomaly Detection from System Tracing Data Using Multimodal Deep Learning**
 
 	Sasho Nedelkoski; Jorge Cardoso; Odej Kao
 	
@@ -87,28 +87,28 @@
 	我们提出了一种用于序列学习的深度学习模型，利用单模态顺序文本数据在跟踪中对服务之间的因果关系进行建模。我们展示了响应时间作为跟踪中的第二种数据类型的重要性，以及对其建模的挑战。通过引入一个模型，我们扩展了单模态体系结构，该模型利用多模态跟踪数据作为文本和实值序列的组合。我们表明，多模态方法可以用于建模正常的系统行为和检测异常，不仅考虑到服务的因果关系，而且还考虑它们在跟踪内的响应时间。此外，我们使用该模型来检测依赖的和并行的任务，以重构执行路径。
 
 
-- Self-Supervised Anomaly Detection from Distributed Traces
+- **Self-Supervised Anomaly Detection from Distributed Traces**
 
 	Jasmin Bogatinovski; Sasho Nedelkoski; Jorge Cardoso; Odej Kao
 	
 	2020 IEEE/ACM 13th International Conference on Utility and Cloud Computing (UCC)
 	
 
-- MicroRCA: Root Cause Localization of Performance Issues in Microservices
+- **MicroRCA: Root Cause Localization of Performance Issues in Microservices**
 
 	Li Wu; Johan Tordsson; Erik Elmroth; Odej Kao
 	
 	NOMS 2020 - 2020 IEEE/IFIP Network Operations and Management Symposium
 	
 
-- Anomaly Detection and Classification using Distributed Tracing and Deep Learning
+- **Anomaly Detection and Classification using Distributed Tracing and Deep Learning**
 
 	Sasho Nedelkoski; Jorge Cardoso; Odej Kao
 	
 	2019 19th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID)
 
 
-- <a name="lundetecting2021"><sup>1</sup></a> Detecting anomalies in microservices with execution trace comparison
+- <a name="lundetecting2021"><sup>1</sup></a> **Detecting anomalies in microservices with execution trace comparison**
 
 	Lun Meng, Feng Ji, Yao Sun, TaoWang
 	
@@ -128,14 +128,14 @@
 
 -------	
 	
-- Midiag: A Sequential Trace-Based Fault Diagnosis Framework for Microservices
+- **Midiag: A Sequential Trace-Based Fault Diagnosis Framework for Microservices**
 	
 	Lun Meng, Yao Sun, Shudong Zhang
 	
 	International Conference on Services Computing, SCC 2020: Services Computing – SCC 2020 pp 137-144
 	
 	
-- MicroRAS: Automatic Recovery in the Absence of Historical Failure Data for Microservice Systems
+- **MicroRAS: Automatic Recovery in the Absence of Historical Failure Data for Microservice Systems**
 
 	Li Wu; Johan Tordsson; Alexander Acker; Odej Kao
 	
