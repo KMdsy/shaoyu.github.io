@@ -6,7 +6,7 @@
 
 ## 一些笔记
 
-在相关工作<a href="lundetecting2021">1</a>中，所要检测的异常如何定义，是一个关键的问题。本文提到"error messages", "performance degradations"与"trace structure and response time anomalies"本身就是几种不同的异常类型，融合多种数据将有助于我们探测更多种类的异常。
+在相关工作<a href="#lundetecting2021">1</a>中，所要检测的异常如何定义，是一个关键的问题。本文提到"error messages", "performance degradations"与"trace structure and response time anomalies"本身就是几种不同的异常类型，融合多种数据将有助于我们探测更多种类的异常。
 本文所建立的调用树中包含了两种调用关系——本地调用（两个微服务位于同一个主机，彼此之间进行调用）、远程调用（两个微服务不在同一个主机，远程调用），但好像在分析的时候没什么区别。
 
 ## 相关论文
