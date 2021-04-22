@@ -6,8 +6,19 @@
 
 ## 一些笔记
 
-在相关工作<a href="#lundetecting2021">1</a>中，所要检测的异常如何定义，是一个关键的问题。本文提到"error messages", "performance degradations"与"trace structure and response time anomalies"本身就是几种不同的异常类型，融合多种数据将有助于我们探测更多种类的异常。
-本文所建立的调用树中包含了两种调用关系——本地调用（两个微服务位于同一个主机，彼此之间进行调用）、远程调用（两个微服务不在同一个主机，远程调用），但好像在分析的时候没什么区别。
+在相关工作<a href="#lundetecting2021">[1]</a>中：
+
+1. 所要检测的异常如何定义，是一个关键的问题。本文提到"error messages", "performance degradations"与"trace structure and response time anomalies"本身就是几种不同的异常类型，融合多种数据将有助于我们探测更多种类的异常。
+
+2. 本文所建立的调用树中包含了两种调用关系——本地调用（两个微服务位于同一个主机，彼此之间进行调用）、远程调用（两个微服务不在同一个主机，远程调用），但好像在分析的时候没什么区别。
+
+在相关工作<a href="#multimodalsasho2019">[2]</a>中：
+
+1. trace数据具有多模态，即meta action之间的结构（因果关系模态，或sequential nature模态）、服务响应时间（实值序列）。
+
+2. trace数据的一个有趣的特性在于，它是一种能够良好的反映服务层状态的数据，同时还包含有大量的底层信息。
+
+3. tree结构的调用在实际调用的时候，存在高并发的特性，即：两个被同一组件同时调用的服务，在响应的时候可能出现先后的差异，这在使用序列作为trace表征方式中是非常常见的，但这种差异不代表异常。
 
 ## 相关论文
 
@@ -75,16 +86,27 @@
 	**基于微服务trace数据，检测意外的调用关系或者意外的调用响应时间**
 	
 
-- **Anomaly Detection from System Tracing Data Using Multimodal Deep Learning**
+- <a name="multimodalsasho2019"><sup>[2]</sup></a> **Anomaly Detection from System Tracing Data Using Multimodal Deep Learning**
 
 	Sasho Nedelkoski; Jorge Cardoso; Odej Kao
 	
 	2019 IEEE 12th International Conference on Cloud Computing (CLOUD)
 	
-	从**trace数据**中解析多模态数据以进行学习，多模态指“service response time in the form of real-valued data”， “causal relationships with other related services repre-
-	sented as a sequence of textual labels.”
+	本文将trace数据视为了**多模态数据**，第一种模态为由事件序列组成的类似于NLP的序列数据（其实与日志模板序列是相似的），第二种模态是每个事件对应的响应时间。
 
-	我们提出了一种用于序列学习的深度学习模型，利用单模态顺序文本数据在跟踪中对服务之间的因果关系进行建模。我们展示了响应时间作为跟踪中的第二种数据类型的重要性，以及对其建模的挑战。通过引入一个模型，我们扩展了单模态体系结构，该模型利用多模态跟踪数据作为文本和实值序列的组合。我们表明，多模态方法可以用于建模正常的系统行为和检测异常，不仅考虑到服务的因果关系，而且还考虑它们在跟踪内的响应时间。此外，我们使用该模型来检测依赖的和并行的任务，以重构执行路径。
+	- 第一步将trace数据异常检测视为了单模态数据的异常检测。其本质是，将上述两种“文本序列”“实值序列”送进LSTM网络中，进行预测，当真实值不在TopK label（文本序列预测）或不在95%置信区间（实值序列预测）时，即为异常。
+
+	- 本文提到的多模态融合，其具体方案是，两种数据均通过单层的LSTM网络，然后在第二个隐层中进行融合（concat）。
+
+	本文的最大缺陷在于：
+	
+	1. 虽然理论上event间的调用因果关系被视为了文本序列中的语法，交由LSTM学习，但是这种拓扑关系本身是已知的，而没有被利用，LSTM学习到的关系是什么，也是不可解释的
+
+	2. 本文实验中的异常全部都是人工生成的，而且有对照网络输出构造异常样本的嫌疑，实验结果存疑。
+
+	3. 本文在还提到，本文通过所学习的预测模型，对调用链中的并发与依赖事件进行了重建与识别，但是识别这些事件对异常检测的作用在哪，并发与否在trace数据的JSON文件中不应该是可以直接被解析的吗 
+	
+-------
 
 
 - **Self-Supervised Anomaly Detection from Distributed Traces**
@@ -106,9 +128,11 @@
 	Sasho Nedelkoski; Jorge Cardoso; Odej Kao
 	
 	2019 19th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID)
+	
+	
 
 
-- <a name="lundetecting2021"><sup>1</sup></a> **Detecting anomalies in microservices with execution trace comparison**
+- <a name="lundetecting2021"><sup>[1]</sup></a> **Detecting anomalies in microservices with execution trace comparison**
 
 	Lun Meng, Feng Ji, Yao Sun, TaoWang
 	
