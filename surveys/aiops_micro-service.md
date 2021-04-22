@@ -140,9 +140,12 @@
 
 	- 本文比较有用的点在于：在处理运维时间序列上，其实存在很多难点，需要我们使用一些预处理方法，如去噪、平滑、去离群值等方法来处理，以保证模型性能，且具备可解释性。
 
-	> However, the large amount of events in the time series and the fact that proper training of neural networks _requires normalization_, leads to obligation of having an outlier removal technique. T_he presence of a strong outlier, will lead to values clamped to zero after the normalization_. Therefore, events having response time greater than three standard deviations from the mean are removed from the training batch.
-	> Next, we normalize the values by using min-max scaling (0, 1) to ensure that we stay in the positive range of values for the response time. In contrast, _using standardization might produce negative values that do not have natural meaning when we deal with response time (no negative time)_. Normalization is required and makes the optimization function of the neural network well-conditioned, which is key for convergence.
-	> we apply _smoothing for noise removal and robustness to small deviations_. The time series is convolved with Hamming smoothing filter defined with its optimal parameters [35] and size M as...
+	> However, the large amount of events in the time series and the fact that proper training of neural networks **requires normalization**, leads to obligation of having an outlier removal technique. **The presence of a strong outlier, will lead to values clamped to zero after the normalization**. Therefore, events having response time greater than three standard deviations from the mean are removed from the training batch.
+	> 
+	> Next, we normalize the values by using min-max scaling (0, 1) to ensure that we stay in the positive range of values for the response time. In contrast, **using standardization might produce negative values that do not have natural meaning when we deal with response time (no negative time)**. Normalization is required and makes the optimization function of the neural network well-conditioned, which is key for convergence.
+	> 
+	> we apply **smoothing for noise removal and robustness to small deviations**. The time series is convolved with Hamming smoothing filter defined with its optimal parameters [35] and size M as...
+	> 
 	
 
 - **MicroRCA: Root Cause Localization of Performance Issues in Microservices**
