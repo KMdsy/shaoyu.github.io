@@ -4,6 +4,8 @@
 
 [2020 AIOPS workshop](https://aiopsworkshop.github.io/accepted_papers/index.html)
 
+[Train Ticket Test Bed](https://github.com/FudanSELab/train-ticket/)
+
 ## 一些笔记
 
 在相关工作<a href="#lundetecting2021">[1]</a>中：
