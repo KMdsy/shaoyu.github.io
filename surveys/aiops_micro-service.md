@@ -84,6 +84,8 @@
 	2020 IEEE 31st International Symposium on Software Reliability Engineering (ISSRE)
 	
 	**基于微服务trace数据，检测意外的调用关系或者意外的调用响应时间**
+
+------------
 	
 
 - <a name="multimodalsasho2019"><sup>[2]</sup></a> **Anomaly Detection from System Tracing Data Using Multimodal Deep Learning**
@@ -115,6 +117,14 @@
 	
 	2020 IEEE/ACM 13th International Conference on Utility and Cloud Computing (UCC)
 	
+	- 这篇论文仍然将trace数据建模为**模板序列**，将异常检测问题视为下一模板预测问题。
+
+	- 不同之处在于引入了self-supervised learning，具体的，在训练的时候，遮蔽trace中的随机一个span，训练网络预测被遮蔽位置的span是什么。
+	具体的，网络学习到的是：trace中每一个位置的预测可能性列表
+
+	- 在异常检测的时候，统计待测样本中，span不在预测出饿top-k list中的比例，记为anomaly score
+	
+--------------
 
 - **MicroRCA: Root Cause Localization of Performance Issues in Microservices**
 
@@ -129,7 +139,13 @@
 	
 	2019 19th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID)
 	
+- **MicroRAS: Automatic Recovery in the Absence of Historical Failure Data for Microservice Systems**
+
+	Li Wu; Johan Tordsson; Alexander Acker; Odej Kao
 	
+	2020 IEEE/ACM 13th International Conference on Utility and Cloud Computing (UCC)
+	
+-------------
 
 
 - <a name="lundetecting2021"><sup>[1]</sup></a> **Detecting anomalies in microservices with execution trace comparison**
@@ -158,12 +174,6 @@
 	
 	International Conference on Services Computing, SCC 2020: Services Computing – SCC 2020 pp 137-144
 	
-	
-- **MicroRAS: Automatic Recovery in the Absence of Historical Failure Data for Microservice Systems**
-
-	Li Wu; Johan Tordsson; Alexander Acker; Odej Kao
-	
-	2020 IEEE/ACM 13th International Conference on Utility and Cloud Computing (UCC)
 	
 ------------
 
