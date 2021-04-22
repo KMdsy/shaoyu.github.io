@@ -126,6 +126,25 @@
 	
 --------------
 
+- **Anomaly Detection and Classification using Distributed Tracing and Deep Learning**
+
+	Sasho Nedelkoski; Jorge Cardoso; Odej Kao
+	
+	2019 19th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID)
+	
+	- 本文本质上是对于时间序列提出了一种异常检测的方法，只是根据本文的检测目标——响应时间，将特定一组微服务的响应时间序列作为了研究对象。然而所提出的方法其实可以在广义的时间序列上进行评估。
+
+	- 本文着重说明了在正常序列具有多种模式的时候，我们该如何去建模正常，这里提出使用VAE的多维高斯分布来建模这种复杂分布，再利用重建误差作为异常得分。
+
+	- 后续，他还通过训练了一个基于1D-CNN的网路，做了异常分类，首先由用户预定义几种异常，然后训练一个有监督的分类器，以帮助将那些检测到的异常归类到已知的异常类型中去。
+
+	- 本文比较有用的点在于：在处理运维时间序列上，其实存在很多难点，需要我们使用一些预处理方法，如去噪、平滑、去离群值等方法来处理，以保证模型性能，且具备可解释性。
+
+	> However, the large amount of events in the time series and the fact that proper training of neural networks _requires normalization_, leads to obligation of having an outlier removal technique. T_he presence of a strong outlier, will lead to values clamped to zero after the normalization_. Therefore, events having response time greater than three standard deviations from the mean are removed from the training batch.
+	> Next, we normalize the values by using min-max scaling (0, 1) to ensure that we stay in the positive range of values for the response time. In contrast, _using standardization might produce negative values that do not have natural meaning when we deal with response time (no negative time)_. Normalization is required and makes the optimization function of the neural network well-conditioned, which is key for convergence.
+	> we apply _smoothing for noise removal and robustness to small deviations_. The time series is convolved with Hamming smoothing filter defined with its optimal parameters [35] and size M as...
+	
+
 - **MicroRCA: Root Cause Localization of Performance Issues in Microservices**
 
 	Li Wu; Johan Tordsson; Erik Elmroth; Odej Kao
@@ -133,11 +152,6 @@
 	NOMS 2020 - 2020 IEEE/IFIP Network Operations and Management Symposium
 	
 
-- **Anomaly Detection and Classification using Distributed Tracing and Deep Learning**
-
-	Sasho Nedelkoski; Jorge Cardoso; Odej Kao
-	
-	2019 19th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID)
 	
 - **MicroRAS: Automatic Recovery in the Absence of Historical Failure Data for Microservice Systems**
 
