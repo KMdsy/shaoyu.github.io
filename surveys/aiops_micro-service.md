@@ -4,7 +4,9 @@
 
 [2020 AIOPS workshop](https://aiopsworkshop.github.io/accepted_papers/index.html)
 
-[Train Ticket Test Bed](https://github.com/FudanSELab/train-ticket/)
+[Train Ticket -- Test Bed](https://github.com/FudanSELab/train-ticket/)
+
+[Sock shop -- Test bed](https://microservices-demo.github.io/)
 
 ## 一些笔记
 
@@ -86,6 +88,12 @@
 	2020 IEEE 31st International Symposium on Software Reliability Engineering (ISSRE)
 	
 	**基于微服务trace数据，检测意外的调用关系或者意外的调用响应时间**
+	
+	- 本文与其他工作有显著的不同，别的工作的异常检测对象一般都是针对单个的调用meta action，而本工作是针对一整条tree状的trace。
+
+	- 本文使用精心设计的手工特征来表征trace数据，向量化的trace数据用一个容量很大的概率模型来学习他们的正常模式。其中之所以要用到容量大的模型，是因为要学习的模式是一整个application的trace，而非一个trace。
+
+	- 手工设计的trace数据使得异常检测后的结果可以快速定位异常类型与异常根因，自带可解释性。
 
 ------------
 	
@@ -148,22 +156,29 @@
 	> 
 	> we apply **smoothing for noise removal and robustness to small deviations**. The time series is convolved with Hamming smoothing filter defined with its optimal parameters [35] and size M as...
 	> 
-	
 
-- **MicroRCA: Root Cause Localization of Performance Issues in Microservices**
+-------------
 
-	Li Wu; Johan Tordsson; Erik Elmroth; Odej Kao
-	
-	NOMS 2020 - 2020 IEEE/IFIP Network Operations and Management Symposium
-	
-
-	
 - **MicroRAS: Automatic Recovery in the Absence of Historical Failure Data for Microservice Systems**
 
 	Li Wu; Johan Tordsson; Alexander Acker; Odej Kao
 	
 	2020 IEEE/ACM 13th International Conference on Utility and Cloud Computing (UCC)
 	
+	- 本文致力于提出一个故障自动恢复方法，指的是当系统已经异常后，我们如何评估某些操作所带来的正面/负面影响，并在恢复效果与恢复时间之间做权衡，选择有较高收益的动作。
+
+	- 本文将trace数据建模为一个属性图，属性图用于构建系统状态模型，分析动作的传播影响等。
+	
+	
+- **MicroRCA: Root Cause Localization of Performance Issues in Microservices**
+
+	Li Wu; Johan Tordsson; Erik Elmroth; Odej Kao
+	
+	NOMS 2020 - 2020 IEEE/IFIP Network Operations and Management Symposium
+	
+	- 我们提出了一种新的与应用无关的系统MicroRCA，用于定位基于容器的微服务中性能异常的根本原因。该方法构造了一个属性图模型，将服务异常性能症状与相应的资源利用率相关联，从而推断出异常微服务。
+	
+
 -------------
 
 
@@ -193,7 +208,8 @@
 	
 	International Conference on Services Computing, SCC 2020: Services Computing – SCC 2020 pp 137-144
 	
-	
+	- 本文还是将异常检测问题转化为下一system call预测问题，这里的system call也是用模板来代替，与之前的不同的是，这里的模板是通过K-means+最长公共子序列搜索来得到的，这与日志相关的工作十分相似。
+	- 
 ------------
 
 #### 基于日志数据
