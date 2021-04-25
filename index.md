@@ -27,6 +27,8 @@
 
 + [Apriori算法原理总结](https://www.cnblogs.com/pinard/p/6293298.html)
 
++ [Anomaly detection on graph: github](https://github.com/safe-graph/graph-fraud-detection-papers)
+
 
 ### 一些不定期更新的笔记
 
