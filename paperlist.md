@@ -4,7 +4,13 @@
 
 ### 2021
 
-+ [AAAI 2020 (2021.02.02)](./paperlist/AAAI2021.md)
++ [WWW 2021 (2021.04.19)](./paperlist/WWW2021.md)
+
++ [IJCAI 2021 (2021.08.21) **not be released**]()
+
++ [CVPR 2021 (2021.06.29)] paper list还没公布，仅公布了ID，在[这里](https://github.com/52CV/CVPR-2021-Papers)有第三方总结的
+
++ [AAAI 2021 (2021.02.02)](./paperlist/AAAI2021.md)
 
 + [ICLR 2021 (2021.03.21)](./paperlist/ICLR2021.md) 
 
