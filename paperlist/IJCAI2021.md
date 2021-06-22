@@ -8,6 +8,12 @@ Accept papers: [link](https://ijcai-21.org/program-main-track/)
 ## Time series
 
 
+## heterogeneous (multi-source)
+
+
+## Graph Representation Learning
+
+
 ## about deep learning
 
 
