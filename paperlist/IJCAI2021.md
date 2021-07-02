@@ -62,6 +62,17 @@ Accept papers: [link](https://ijcai-21.org/program-main-track/)
 
 ## Time series
 
++ Time-Series Representation Learning via Temporal and Contextual Contrasting
+
+  Emadeldeen Eldele (School of Computer Science and Engineering, Nanyang Technological University, Singapore)
+  Mohamed Ragab (School of Computer Science and Engineering, Nanyang Technological University, Singapore)
+  Zhenghua Chen (Institute for Infocomm Research, A*STAR, Singapore)
+  Min Wu (Institute for Infocomm Research, A*STAR, Singapore)
+  Chee Keong Kwoh (School of Computer Science and Engineering, Nanyang Technological University, Singapore)
+  Xiaoli Li (Institute for Infocomm Research, A*STAR, Singapore)
+  Cuntai Guan (School of Computer Science and Engineering, Nanyang Technological University, Singapore)
+
+
 + TE-ESN: Time Encoding Echo State Network for Prediction Based on Irregularly Sampled Time Series Data
   
   Chenxi Sun (Key Laboratory of Machine Perception (Ministry of Education), Peking University, Beijing, China. School of Electronics Engineering and Computer Science, Peking University, Beijing, China.)
